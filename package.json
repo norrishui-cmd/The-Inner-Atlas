@@ -1,0 +1,16 @@
+{
+  "name": "the-inner-atlas",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro check && astro build",
+    "typecheck": "astro check"
+  },
+  "dependencies": {
+    "@astrojs/check": "latest",
+    "@astrojs/sitemap": "latest",
+    "astro": "latest",
+    "typescript": "latest"
+  }
+}

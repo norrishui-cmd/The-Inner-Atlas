@@ -1,0 +1,20 @@
+---
+const { compact = false } = Astro.props;
+---
+<aside class="newsletter">
+  <h2>{compact ? 'Keep a quiet thread' : 'One quiet journey each week'}</h2>
+  <p>Thoughtful places, practical pauses, and no manufactured urgency.</p>
+  <form data-newsletter>
+    <label class="sr-only" for="newsletter-email">Email address</label>
+    <input id="newsletter-email" required type="email" name="email" placeholder="you@example.com" autocomplete="email" />
+    <button class="button" type="submit">Subscribe</button>
+  </form>
+  <p class="status" role="status"></p>
+</aside>
+<script>
+  import { subscribe } from '../lib/newsletter';
+  document.querySelectorAll<HTMLFormElement>('[data-newsletter]').forEach(form => form.addEventListener('submit', async e => {
+    e.preventDefault(); const status=form.parentElement?.querySelector<HTMLElement>('.status'); const email=new FormData(form).get('email')?.toString() || '';
+    if(status) status.textContent='Sending…'; const result=await subscribe(email,'weekly-journey'); if(status) status.textContent=result.message; if(result.ok) form.reset();
+  }));
+</script>
