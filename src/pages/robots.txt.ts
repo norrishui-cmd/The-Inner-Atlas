@@ -1,1 +1,8 @@
-export const GET=({site}:{site:URL})=>new Response(`User-agent: *\nAllow: /\nSitemap: ${new URL('sitemap-index.xml',site)}\n`,{headers:{'Content-Type':'text/plain'}});
+import type { APIRoute } from 'astro';
+
+export const GET: APIRoute = ({ site }) => {
+  const sitemap = new URL('sitemap-index.xml', site ?? 'https://dunhuangwithin.com');
+  return new Response(`User-agent: *\nAllow: /\n\nSitemap: ${sitemap.href}\n`, {
+    headers: { 'Content-Type': 'text/plain; charset=utf-8' },
+  });
+};
