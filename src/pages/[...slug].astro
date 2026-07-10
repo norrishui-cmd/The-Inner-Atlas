@@ -1,7 +1,58 @@
 ---
-import Base from '../layouts/Base.astro'; import Newsletter from '../components/Newsletter.astro'; import { getCollection, render } from 'astro:content';
-export async function getStaticPaths(){const items=await getCollection('articles',({data})=>data.status==='published');return items.map(item=>({params:{slug:item.id},props:{item}}))}
-const {item}=Astro.props; const {Content}=await render(item); const crumbs=item.id.split('/');
-const schema={"@context":"https://schema.org","@type":item.data.contentType==='place'?'TouristAttraction':'Article',headline:item.data.title,description:item.data.description,datePublished:item.data.publishedAt.toISOString(),dateModified:(item.data.updatedAt??item.data.publishedAt).toISOString(),author:{"@type":"Organization",name:item.data.author},mainEntityOfPage:new URL(Astro.url.pathname,Astro.site).href};
+import Base from '../layouts/Base.astro';
+import Newsletter from '../components/Newsletter.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const items = await getCollection('articles', ({ data }) => data.status === 'published');
+  return items.map((item) => ({ params: { slug: item.id }, props: { item } }));
+}
+
+const { item } = Astro.props;
+const { Content } = await render(item);
+const segments = item.id.split('/');
+const breadcrumbs = segments.map((segment: string, index: number) => ({
+  label: segment.replaceAll('-', ' '),
+  href: `/${segments.slice(0, index + 1).join('/')}/`,
+  isLast: index === segments.length - 1,
+}));
+const sources = item.data.sources ?? [];
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': item.data.contentType === 'place' ? 'TouristAttraction' : 'Article',
+  headline: item.data.title,
+  description: item.data.description,
+  datePublished: item.data.publishedAt.toISOString(),
+  dateModified: (item.data.updatedAt ?? item.data.publishedAt).toISOString(),
+  author: { '@type': 'Organization', name: item.data.author },
+  mainEntityOfPage: new URL(Astro.url.pathname, Astro.site).href,
+};
 ---
-<Base title={item.data.seoTitle??item.data.title} description={item.data.seoDescription??item.data.description} noindex={item.data.noindex} type="article" schema={schema}><article class="article"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / {crumbs.map((c:string,i:number)=><><a href={`/${crumbs.slice(0,i+1).join('/')}/`}>{c.replaceAll('-',' ')}</a>{i<crumbs.length-1?' / ':''}</>)}</nav><p class="eyebrow">{item.data.cluster.replaceAll('-',' ')}</p><h1>{item.data.title}</h1><p class="lede">{item.data.description}</p><Content />{item.data.sources?.length&&<section><h2>Sources & further reading</h2><ul>{item.data.sources.map((s:any)=><li><a href={s.url} rel="noopener">{s.title}</a> — {s.publisher}</li>)}</ul></section>}<hr><p><a href="/build-your-retreat/">Build a personal retreat around what you need now →</a></p></article><section class="section"><div class="wrap"><Newsletter compact /></div></section></Base>
+
+<Base
+  title={item.data.seoTitle ?? item.data.title}
+  description={item.data.seoDescription ?? item.data.description}
+  noindex={item.data.noindex}
+  type="article"
+  schema={schema}
+>
+  <article class="article">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      {breadcrumbs.map((crumb) => <span> / <a href={crumb.href} aria-current={crumb.isLast ? 'page' : undefined}>{crumb.label}</a></span>)}
+    </nav>
+    <p class="eyebrow">{item.data.cluster.replaceAll('-', ' ')}</p>
+    <h1>{item.data.title}</h1>
+    <p class="lede">{item.data.description}</p>
+    <Content />
+    {sources.length > 0 && (
+      <section>
+        <h2>Sources & further reading</h2>
+        <ul>{sources.map((source) => <li><a href={source.url} rel="noopener">{source.title}</a> — {source.publisher}</li>)}</ul>
+      </section>
+    )}
+    <hr />
+    <p><a href="/build-your-retreat/">Build a personal retreat around what you need now →</a></p>
+  </article>
+  <section class="section"><div class="wrap"><Newsletter compact /></div></section>
+</Base>
