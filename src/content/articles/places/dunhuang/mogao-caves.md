@@ -1,5 +1,5 @@
 ---
-title: The Mogao Caves: Context for a Thoughtful Visit
+title: "The Mogao Caves: Context for a Thoughtful Visit"
 description: Essential historical and conservation context for visiting the UNESCO-listed Mogao Caves near Dunhuang.
 contentType: place
 cluster: places

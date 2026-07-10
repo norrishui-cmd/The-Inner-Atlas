@@ -1,5 +1,5 @@
 ---
-title: Cave 17 at Dunhuang: The Library Cave
+title: "Cave 17 at Dunhuang: The Library Cave"
 description: An evidence-based introduction to the Mogao Library Cave, its manuscript cache, and the complex history of dispersal and study.
 contentType: place
 cluster: places
