@@ -1,12 +1,12 @@
 ---
 title: Sources and Methodology
-description: How The Inner Atlas researches place history, travel guidance, trends, and reflective content.
+description: How Dunhuang Within researches place history, travel guidance, trends, and reflective content.
 contentType: guide
 cluster: places
 primaryIntent: informational
 status: published
 publishedAt: 2026-07-10
-author: The Inner Atlas Editorial Team
+author: Dunhuang Within Editorial Team
 ---
 ## How we research
 

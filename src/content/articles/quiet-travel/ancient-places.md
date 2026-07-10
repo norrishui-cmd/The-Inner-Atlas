@@ -6,7 +6,7 @@ cluster: quiet-travel
 primaryIntent: discovery
 status: published
 publishedAt: 2026-07-10
-author: The Inner Atlas Editorial Team
+author: Dunhuang Within Editorial Team
 ---
 ## Context before projection
 

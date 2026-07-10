@@ -2,12 +2,12 @@
 const { compact = false } = Astro.props;
 ---
 <aside class="newsletter">
-  <h2>{compact ? 'Keep a quiet thread' : 'One quiet journey each week'}</h2>
-  <p>Thoughtful places, practical pauses, and no manufactured urgency.</p>
+  <h2>{compact ? 'Continue the path' : 'One path from Dunhuang each week'}</h2>
+  <p>A Dunhuang story, a question, and a small practice for the space between chapters.</p>
   <form data-newsletter>
     <label class="sr-only" for="newsletter-email">Email address</label>
     <input id="newsletter-email" required type="email" name="email" placeholder="you@example.com" autocomplete="email" />
-    <button class="button" type="submit">Subscribe</button>
+    <button class="button" type="submit">Send Me the Next Path</button>
   </form>
   <p class="status" role="status"></p>
 </aside>

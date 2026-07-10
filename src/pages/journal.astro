@@ -1,0 +1,5 @@
+---
+import Base from '../layouts/Base.astro'; import {getCollection} from 'astro:content';
+const entries=(await getCollection('articles',({data})=>data.status==='published'&&!data.noindex)).filter(item=>!['about','editorial-principles','sources-and-methodology'].includes(item.id));
+---
+<Base title="Journal" description="The Dunhuang Within journal: quiet travel, personal retreats, digital distance, life transitions, and Dunhuang stories."><section class="section"><div class="wrap"><p class="eyebrow">Acquisition opens into Dunhuang</p><h1>Journal</h1><p class="lede">Stories and practical guides for quieter attention—each one a doorway toward a path, a practice, or Dunhuang itself.</p><div class="editorial-grid">{entries.map((entry,index)=><a class:list={["story",{lead:index===0}]} href={`/${entry.id}/`}><span class="story-meta">{entry.data.cluster.replaceAll('-',' ')}</span><h3>{entry.data.title}</h3><p>{entry.data.description}</p></a>)}</div></div></section></Base>

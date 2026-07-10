@@ -6,7 +6,7 @@ cluster: quiet-travel
 primaryIntent: informational
 status: published
 publishedAt: 2026-07-10
-author: The Inner Atlas Editorial Team
+author: Dunhuang Within Editorial Team
 featured: true
 relatedContent: [quiet-travel/what-is-quiet-travel, quiet-travel/for-digital-overload]
 ---

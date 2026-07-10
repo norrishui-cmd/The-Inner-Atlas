@@ -6,7 +6,7 @@ cluster: places
 primaryIntent: informational
 status: published
 publishedAt: 2026-07-10
-author: The Inner Atlas Editorial Team
+author: Dunhuang Within Editorial Team
 sources:
   - title: Mogao Caves
     publisher: UNESCO World Heritage Centre

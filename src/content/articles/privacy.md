@@ -1,12 +1,12 @@
 ---
 title: Privacy
-description: How The Inner Atlas handles builder answers, analytics, and email addresses.
+description: How Dunhuang Within handles builder answers, analytics, and email addresses.
 contentType: guide
 cluster: between-chapters
 primaryIntent: informational
 status: published
 publishedAt: 2026-07-10
-author: The Inner Atlas Editorial Team
+author: Dunhuang Within Editorial Team
 noindex: true
 ---
 ## Your information

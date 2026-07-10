@@ -1,12 +1,12 @@
 ---
 title: Editorial Principles
-description: The standards behind The Inner Atlas, including evidence, cultural respect, health boundaries, corrections, and human review.
+description: The standards behind Dunhuang Within, including evidence, cultural respect, health boundaries, corrections, and human review.
 contentType: guide
 cluster: between-chapters
 primaryIntent: informational
 status: published
 publishedAt: 2026-07-10
-author: The Inner Atlas Editorial Team
+author: Dunhuang Within Editorial Team
 ---
 ## Our commitments
 

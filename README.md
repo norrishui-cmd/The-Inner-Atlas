@@ -1,6 +1,6 @@
-# The Inner Atlas MVP v1
+# Dunhuang Within MVP
 
-An Astro 5, static-first editorial product for quiet travel, personal retreats, and place discovery.
+An Astro, static-first editorial product for a modern inner journey through Dunhuang. Quiet travel, digital detox, and personal retreat content serve as acquisition and practice layers around the Dunhuang-first brand.
 
 ## Architecture
 
@@ -40,7 +40,7 @@ npm run build
 
 ## Known gaps before production
 
-- Replace the placeholder canonical domain in `astro.config.mjs` with the production domain.
+- Connect `dunhuangwithin.com` to the deployment and verify both apex and `www` redirect to one canonical host.
 - Connect and test the newsletter provider; add provider-specific privacy and retention language.
 - Add the real analytics loader and consent handling required for launch markets.
 - Commission or license original place photography and create a production social card.

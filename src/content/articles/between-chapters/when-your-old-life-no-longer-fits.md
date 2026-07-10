@@ -6,7 +6,7 @@ cluster: between-chapters
 primaryIntent: reflection
 status: published
 publishedAt: 2026-07-10
-author: The Inner Atlas Editorial Team
+author: Dunhuang Within Editorial Team
 ---
 ## Familiar is not the same as fitting
 

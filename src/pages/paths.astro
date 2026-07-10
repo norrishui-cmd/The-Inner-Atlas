@@ -1,0 +1,12 @@
+---
+import Base from '../layouts/Base.astro';
+const paths=[
+  {id:'desert-crossing',name:'The Desert Crossing',for:'Transition · uncertainty · leaving behind',text:'For the space between who you were and what comes next.',link:'/between-chapters/'},
+  {id:'hidden-cave',name:'The Hidden Cave',for:'Reflection · silence · what remains unseen',text:'A path inward, inspired by the shelter and archive of the cave—not an ancient doctrine.',link:'/places/dunhuang/cave-17/'},
+  {id:'oasis-return',name:'The Oasis Return',for:'Renewal · restoration · enoughness',text:'A return to what sustains after distance and depletion.',link:'/personal-retreat/'},
+  {id:'silk-road',name:'The Silk Road Path',for:'Direction · crossing · possible futures',text:'A path for choosing movement without demanding one certain destination.',link:'/places/dunhuang/silk-road-crossroads/'},
+  {id:'moon-path',name:'The Moon Path',for:'Cycles · endings · beginnings',text:'A contemporary reflection on change; historically specific symbolism requires sourced context.',link:'/personal-retreat/questions-for-reflection/'},
+  {id:'quiet-threshold',name:'The Quiet Threshold',for:'Identity · transition · the space between',text:'For standing honestly between a familiar past and an unnamed future.',link:'/between-chapters/when-your-old-life-no-longer-fits/'}
+];
+---
+<Base title="Dunhuang Paths" description="Six modern editorial paths inspired by Dunhuang landscapes and history, clearly distinguished from ancient doctrine."><article class="article"><nav class="breadcrumbs"><a href="/">Home</a> / Paths</nav><p class="eyebrow">Modern frameworks inspired by Dunhuang</p><h1>Paths</h1><p class="lede">Dunhuang was a place between worlds. Perhaps you are, too.</p><p>These paths are contemporary editorial frameworks—not historical teachings. Each begins with a documented place, landscape, or history and opens a modern practice for reflection.</p>{paths.map(path=><section id={path.id}><p class="eyebrow">{path.for}</p><h2>{path.name}</h2><p>{path.text}</p><a href={path.link}>Enter this path →</a></section>)}<hr><a class="button" href="/find-your-path/">Find Your Path</a></article></Base>

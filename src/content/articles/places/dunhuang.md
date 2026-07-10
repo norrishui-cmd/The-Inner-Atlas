@@ -7,7 +7,7 @@ primaryIntent: discovery
 status: published
 publishedAt: 2026-07-10
 updatedAt: 2026-07-10
-author: The Inner Atlas Editorial Team
+author: Dunhuang Within Editorial Team
 featured: true
 sources:
   - title: Mogao Caves
