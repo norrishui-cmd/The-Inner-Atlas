@@ -1,6 +1,8 @@
 ---
 title: "The Mogao Caves: Context for a Thoughtful Visit"
 description: Essential historical and conservation context for visiting the UNESCO-listed Mogao Caves near Dunhuang.
+seoTitle: Mogao Caves Dunhuang — History, Murals & Visitor Context
+seoDescription: Explore the Mogao Caves in Dunhuang: a UNESCO-listed complex of Buddhist cave art, murals, sculpture, manuscripts, and Silk Road exchange.
 contentType: place
 cluster: places
 primaryIntent: informational
@@ -23,4 +25,4 @@ The Mogao Caves form a major complex of rock-cut Buddhist cave temples near Dunh
 
 Conservation determines how the site can be experienced. Visitor numbers, light, humidity, and photography all matter. Check current official information before travel and accept that access may change.
 
-Digital Dunhuang offers a valuable way to study selected caves in detail before or after a visit.
+Digital Dunhuang offers a valuable way to study selected caves in detail before or after a visit. Continue with the [Dunhuang murals](/places/dunhuang/murals/), [Dunhuang manuscripts](/places/dunhuang/manuscripts/), and [Library Cave](/places/dunhuang/cave-17/).

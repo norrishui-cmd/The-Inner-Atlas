@@ -30,3 +30,17 @@ The surrounding Gobi and desert landscapes create striking changes in scale and 
 Treat conservation rules as part of the encounter. Book through official channels, follow photography restrictions, and use qualified interpretation. The caves are not a backdrop for a private spiritual narrative.
 
 Let Dunhuang inspire a different relationship with time: fewer stops, deeper preparation, and enough quiet after visiting to consider what you learned.
+
+## Explore Dunhuang in depth
+
+Follow the subjects that make Dunhuang more than a destination:
+
+- [Mogao Caves: history, conservation, and visitor context](/places/dunhuang/mogao-caves/)
+- [Dunhuang murals across a thousand years](/places/dunhuang/murals/)
+- [Dunhuang feitian and the flying figures of Mogao](/places/dunhuang/feitian/)
+- [Dunhuang manuscripts and the multilingual Library Cave archive](/places/dunhuang/manuscripts/)
+- [Cave 17: the Dunhuang Library Cave](/places/dunhuang/cave-17/)
+- [The International Dunhuang Programme](/places/dunhuang/international-dunhuang-programme/)
+- [Crescent Lake and Mingsha Mountain](/places/dunhuang/crescent-lake/)
+- [Dunhuang sandstorms and desert safety](/places/dunhuang/sandstorms/)
+- [Interactive Dunhuang trail map](/dunhuang-map/)
