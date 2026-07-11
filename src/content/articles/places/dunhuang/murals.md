@@ -2,7 +2,7 @@
 title: "Dunhuang Murals: A Thousand Years of Painted Worlds"
 description: An introduction to the Mogao cave murals, their subjects, historical layers, cultural exchange, and responsible interpretation.
 seoTitle: Dunhuang Murals — Art, Stories & History of the Mogao Caves
-seoDescription: Explore Dunhuang murals across the Mogao Caves: Buddhist imagery, Silk Road scenes, daily life, landscape, and a millennium of artistic exchange.
+seoDescription: "Explore Dunhuang murals across the Mogao Caves: Buddhist imagery, Silk Road scenes, daily life, landscape, and a millennium of artistic exchange."
 contentType: guide
 cluster: places
 primaryIntent: informational
