@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import '../styles/mobile.css';
 const { title, description, image='/og.png', type='website', noindex=false, schema, transparentHeader=false } = Astro.props;
 const canonical=new URL(Astro.url.pathname,Astro.site); const fullTitle=title.includes('Dunhuang Within')?title:`${title} | Dunhuang Within`;
 const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
