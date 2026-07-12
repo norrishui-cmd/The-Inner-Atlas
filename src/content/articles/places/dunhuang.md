@@ -1,12 +1,14 @@
 ---
-title: Dunhuang — A Place Between Worlds
-description: Discover Dunhuang through desert geography, Silk Road history, the Mogao Caves, and a quieter approach to place.
+title: "Dunhuang, China: Travel, History and a Place Between Worlds"
+description: Discover Dunhuang through a practical travel guide, desert geography, Silk Road history, the Mogao Caves, and a quieter approach to place.
+seoTitle: Dunhuang China — Travel Guide, History, Map & Mogao Caves
+seoDescription: "Explore Dunhuang, China with a travel guide, two-day itinerary, weather advice, interactive map, Mogao Caves, Crescent Lake and Silk Road history."
 contentType: place
 cluster: places
 primaryIntent: discovery
 status: published
 publishedAt: 2026-07-10
-updatedAt: 2026-07-10
+updatedAt: 2026-07-12
 author: Dunhuang Within Editorial Team
 featured: true
 sources:
@@ -35,6 +37,10 @@ Let Dunhuang inspire a different relationship with time: fewer stops, deeper pre
 
 Follow the subjects that make Dunhuang more than a destination:
 
+- [Dunhuang spiritual jewelry: culture, symbols and intention](/places/dunhuang/spiritual-jewelry/)
+- [The spiritual meaning of Dunhuang Feitian](/places/dunhuang/feitian-spiritual-meaning/)
+- [Lotus jewelry meaning in Buddhist art](/places/dunhuang/lotus-jewelry-meaning/)
+- [How to choose a crystal bracelet by intention](/places/dunhuang/crystal-bracelet-intention/)
 - [Mogao Caves: history, conservation, and visitor context](/places/dunhuang/mogao-caves/)
 - [Dunhuang murals across a thousand years](/places/dunhuang/murals/)
 - [Dunhuang feitian and the flying figures of Mogao](/places/dunhuang/feitian/)
@@ -44,3 +50,5 @@ Follow the subjects that make Dunhuang more than a destination:
 - [Crescent Lake and Mingsha Mountain](/places/dunhuang/crescent-lake/)
 - [Dunhuang sandstorms and desert safety](/places/dunhuang/sandstorms/)
 - [Interactive Dunhuang trail map](/dunhuang-map/)
+
+Travel planning remains available as supporting context in the [Dunhuang travel guide](/places/dunhuang/travel-guide/), but the central journey of Dunhuang Within is cultural and inward.
