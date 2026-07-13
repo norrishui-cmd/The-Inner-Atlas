@@ -20,7 +20,7 @@ const sources = item.data.sources ?? [];
 const allArticles = await getCollection('articles', ({ data }) => data.status === 'published');
 const relatedIds = item.data.relatedContent ?? [];
 const relatedItems = relatedIds.map((id:string)=>allArticles.find(article=>article.id===id)).filter(Boolean).slice(0,4);
-const isJewelryTopic = item.id.startsWith('places/dunhuang/') && ['spiritual-jewelry','feitian-spiritual-meaning','lotus-jewelry-meaning','crystal-bracelet-intention','spiritual-bracelet-vs-mala','responsible-buddhist-jewelry','jewelry-gift-guide','cleanse-crystal-bracelet'].some(topic=>item.id.endsWith(topic));
+const isJewelryTopic = item.id.startsWith('places/dunhuang/') && ['spiritual-jewelry','feitian-spiritual-meaning','lotus-jewelry-meaning','crystal-bracelet-intention','spiritual-bracelet-vs-mala','responsible-buddhist-jewelry','jewelry-gift-guide','cleanse-crystal-bracelet','nine-colored-deer-meaning','three-hares-meaning','caisson-ceiling-meaning','dunhuang-colors-meaning'].some(topic=>item.id.endsWith(topic));
 const siteOrigin=Astro.site ?? new URL('https://dunhuangwithin.com/');
 const canonicalUrl = new URL(Astro.url.pathname, siteOrigin).href;
 const schema = {
