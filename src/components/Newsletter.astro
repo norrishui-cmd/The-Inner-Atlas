@@ -13,8 +13,9 @@ const { compact = false, heading, copy, buttonLabel, source = 'weekly-journey' }
 </aside>
 <script>
   import { subscribe } from '../lib/newsletter';
+  import { track } from '../lib/analytics';
   document.querySelectorAll<HTMLFormElement>('[data-newsletter]').forEach(form => form.addEventListener('submit', async e => {
     e.preventDefault(); const status=form.parentElement?.querySelector<HTMLElement>('.status'); const email=new FormData(form).get('email')?.toString() || '';
-    if(status) status.textContent='Sending…'; const result=await subscribe(email,form.dataset.source || 'weekly-journey'); if(status) status.textContent=result.message; if(result.ok) form.reset();
+    const source=form.dataset.source || 'weekly-journey'; if(status) status.textContent='Sending…'; const result=await subscribe(email,source); if(status) status.textContent=result.message; if(result.ok){track('email_submit',{source});form.reset();}
   }));
 </script>
