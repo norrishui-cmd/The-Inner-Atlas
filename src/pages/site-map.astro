@@ -2,6 +2,6 @@
 import Base from '../layouts/Base.astro';
 import {getCollection} from 'astro:content';
 const articles=(await getCollection('articles',({data})=>data.status==='published'&&!data.noindex)).sort((a,b)=>a.data.title.localeCompare(b.data.title));
-const commercial=[['Dunhuang Spiritual Jewelry','/spiritual-jewelry/'],['Spiritual Bracelets','/bracelets/'],['Intention Necklaces','/necklaces/'],['Intention Crystals','/crystals/'],['Future Collections','/objects/'],['Find Your Path','/find-your-path/']];
+const commercial:[label:string,href:string][]=[['Dunhuang Spiritual Jewelry','/spiritual-jewelry/'],['Spiritual Bracelets','/bracelets/'],['Intention Necklaces','/necklaces/'],['Intention Crystals','/crystals/'],['Future Collections','/objects/'],['Find Your Path','/find-your-path/']];
 ---
 <Base title="Site Map" description="Browse every published Dunhuang Within guide, cultural story, practice and spiritual jewelry collection page."><article class="article"><nav class="breadcrumbs"><a href="/">Home</a> / Site Map</nav><p class="eyebrow">Every path</p><h1>Site Map</h1><h2>Jewelry and personal paths</h2><ul>{commercial.map(item=><li><a href={item[1]}>{item[0]}</a></li>)}</ul><h2>Published guides and stories</h2><ul>{articles.map(article=><li><a href={`/${article.id}/`}>{article.data.title}</a></li>)}</ul></article></Base>

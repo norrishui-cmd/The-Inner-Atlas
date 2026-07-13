@@ -1,7 +1,9 @@
 ---
 import Base from '../layouts/Base.astro';
 import Newsletter from '../components/Newsletter.astro';
-const clusters=[
+type HubLink=[label:string,href:string];
+type HubGroup={title:string;links:HubLink[]};
+const clusters:HubGroup[]=[
  {title:'Choose by form',links:[['Spiritual Bracelets','/bracelets/'],['Intention Necklaces','/necklaces/'],['Meditation Crystals','/crystals/']]},
  {title:'Understand the symbol',links:[['Dunhuang Feitian Meaning','/places/dunhuang/feitian-spiritual-meaning/'],['Lotus Jewelry Meaning','/places/dunhuang/lotus-jewelry-meaning/'],['Dunhuang Symbols','/symbols/']]},
  {title:'Choose responsibly',links:[['Spiritual Bracelet vs Mala','/places/dunhuang/spiritual-bracelet-vs-mala/'],['Buddhist-Inspired Jewelry Guide','/places/dunhuang/responsible-buddhist-jewelry/'],['Spiritual Jewelry Gift Guide','/places/dunhuang/jewelry-gift-guide/'],['Crystal Bracelet Care','/places/dunhuang/cleanse-crystal-bracelet/']]}
