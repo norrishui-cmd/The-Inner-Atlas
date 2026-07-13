@@ -17,15 +17,28 @@ const breadcrumbs = segments.map((segment: string, index: number) => ({
   isLast: index === segments.length - 1,
 }));
 const sources = item.data.sources ?? [];
+const allArticles = await getCollection('articles', ({ data }) => data.status === 'published');
+const relatedIds = item.data.relatedContent ?? [];
+const relatedItems = relatedIds.map((id:string)=>allArticles.find(article=>article.id===id)).filter(Boolean).slice(0,4);
+const isJewelryTopic = item.id.startsWith('places/dunhuang/') && ['spiritual-jewelry','feitian-spiritual-meaning','lotus-jewelry-meaning','crystal-bracelet-intention','spiritual-bracelet-vs-mala','responsible-buddhist-jewelry','jewelry-gift-guide','cleanse-crystal-bracelet'].some(topic=>item.id.endsWith(topic));
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
 const schema = {
   '@context': 'https://schema.org',
-  '@type': item.data.contentType === 'place' ? 'TouristAttraction' : 'Article',
-  headline: item.data.title,
-  description: item.data.description,
-  datePublished: item.data.publishedAt.toISOString(),
-  dateModified: (item.data.updatedAt ?? item.data.publishedAt).toISOString(),
-  author: { '@type': 'Organization', name: item.data.author },
-  mainEntityOfPage: new URL(Astro.url.pathname, Astro.site).href,
+  '@graph': [{
+    '@type': item.data.contentType === 'place' ? 'TouristAttraction' : 'Article',
+    headline: item.data.title,
+    description: item.data.description,
+    datePublished: item.data.publishedAt.toISOString(),
+    dateModified: (item.data.updatedAt ?? item.data.publishedAt).toISOString(),
+    author: { '@id': 'https://dunhuangwithin.com/#organization' },
+    publisher: { '@id': 'https://dunhuangwithin.com/#organization' },
+    mainEntityOfPage: canonicalUrl,
+  },{
+    '@type':'BreadcrumbList',itemListElement:[
+      {'@type':'ListItem',position:1,name:'Home',item:'https://dunhuangwithin.com/'},
+      ...breadcrumbs.map((crumb,index)=>({'@type':'ListItem',position:index+2,name:crumb.label,item:new URL(crumb.href,Astro.site).href}))
+    ]
+  }]
 };
 ---
 
@@ -51,8 +64,10 @@ const schema = {
         <ul>{sources.map((source) => <li><a href={source.url} rel="noopener">{source.title}</a> — {source.publisher}</li>)}</ul>
       </section>
     )}
+    {relatedItems.length > 0 && <section><h2>Continue exploring</h2><div class="related-grid">{relatedItems.map((related:any)=><a href={`/${related.id}/`}><strong>{related.data.title}</strong><span>{related.data.description}</span></a>)}</div></section>}
     <hr />
-    <p><a href="/build-your-retreat/">Build a personal retreat around what you need now →</a></p>
+    <p><a href={isJewelryTopic?'/objects/':'/build-your-retreat/'}>{isJewelryTopic?'Explore Dunhuang jewelry and objects of intention →':'Build a personal retreat around what you need now →'}</a></p>
   </article>
   <section class="section"><div class="wrap"><Newsletter compact /></div></section>
 </Base>
+<style>.related-grid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}.related-grid a{display:flex;flex-direction:column;gap:.5rem;padding:1.5rem;border-right:1px solid var(--line);border-bottom:1px solid var(--line);text-decoration:none}.related-grid span{font-size:.85rem;color:var(--ink-muted)}@media(max-width:650px){.related-grid{grid-template-columns:1fr}.related-grid a{border-right:0}}</style>
