@@ -1,13 +1,13 @@
 ---
-const { compact = false } = Astro.props;
+const { compact = false, heading, copy, buttonLabel, source = 'weekly-journey' } = Astro.props;
 ---
 <aside class="newsletter">
-  <h2>{compact ? 'Continue the path' : 'One path from Dunhuang each week'}</h2>
-  <p>A Dunhuang story, a question, and a small practice for the space between chapters.</p>
-  <form data-newsletter>
+  <h2>{heading ?? (compact ? 'Continue the path' : 'One path from Dunhuang each week')}</h2>
+  <p>{copy ?? 'A Dunhuang story, a question, and a small practice for the space between chapters.'}</p>
+  <form data-newsletter data-source={source}>
     <label class="sr-only" for="newsletter-email">Email address</label>
     <input id="newsletter-email" required type="email" name="email" placeholder="you@example.com" autocomplete="email" />
-    <button class="button" type="submit">Send Me the Next Path</button>
+    <button class="button" type="submit">{buttonLabel ?? 'Send Me the Next Path'}</button>
   </form>
   <p class="status" role="status"></p>
 </aside>
@@ -15,6 +15,6 @@ const { compact = false } = Astro.props;
   import { subscribe } from '../lib/newsletter';
   document.querySelectorAll<HTMLFormElement>('[data-newsletter]').forEach(form => form.addEventListener('submit', async e => {
     e.preventDefault(); const status=form.parentElement?.querySelector<HTMLElement>('.status'); const email=new FormData(form).get('email')?.toString() || '';
-    if(status) status.textContent='Sending…'; const result=await subscribe(email,'weekly-journey'); if(status) status.textContent=result.message; if(result.ok) form.reset();
+    if(status) status.textContent='Sending…'; const result=await subscribe(email,form.dataset.source || 'weekly-journey'); if(status) status.textContent=result.message; if(result.ok) form.reset();
   }));
 </script>

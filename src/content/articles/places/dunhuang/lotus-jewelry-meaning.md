@@ -33,3 +33,5 @@ When touching the piece, pause for one breath and ask: **What can remain clear w
 Look for clear materials, accurate cultural context, an identifiable design source and honest claims. Be cautious when a seller guarantees healing, wealth, protection or awakening solely from owning the object.
 
 Explore [Dunhuang spiritual jewelry](/places/dunhuang/spiritual-jewelry/) or [find the intention that fits your current path](/find-your-path/).
+
+Continue to the future [intention necklace collection](/necklaces/) or [spiritual bracelet collection](/bracelets/).

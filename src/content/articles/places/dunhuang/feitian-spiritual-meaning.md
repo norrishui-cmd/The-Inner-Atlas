@@ -31,3 +31,5 @@ The documented image comes first. Dunhuang Within then uses the Feitian as a con
 A Feitian pendant or bracelet can translate the curve of a ribbon, the rhythm of movement or a mural color into wearable form. It can serve as a reminder to breathe, soften unnecessary tension, and move with intention. It does not guarantee freedom, luck or spiritual protection.
 
 Read the broader [history of Dunhuang Feitian](/places/dunhuang/feitian/) or explore the future [Dunhuang spiritual jewelry collection](/objects/).
+
+See how this visual language may become a future [Dunhuang intention necklace](/necklaces/).

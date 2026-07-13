@@ -44,3 +44,5 @@ A bracelet can be a tactile pause because it meets the hand throughout the day. 
 - **Direction:** the Silk Road Path
 
 Use [Find Your Path](/find-your-path/) to discover which intention reflects your present moment, then visit the future [Dunhuang jewelry and crystal collections](/objects/).
+
+Explore by form: [spiritual bracelets](/bracelets/), [intention necklaces](/necklaces/), or [meditation crystals](/crystals/).

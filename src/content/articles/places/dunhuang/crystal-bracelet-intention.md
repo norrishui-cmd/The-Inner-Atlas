@@ -37,3 +37,5 @@ These are Dunhuang Within design associations, not ancient Dunhuang crystal doct
 Choose one phrase linked to your intention. Each time the bracelet catches your attention, take one unforced breath and repeat the phrase silently. The bracelet becomes an anchor because of the relationship you build with it.
 
 Discover your [Dunhuang path](/find-your-path/) or explore the future [bracelet, necklace and crystal collections](/objects/).
+
+Compare the dedicated [spiritual bracelet collection](/bracelets/) and [Dunhuang intention crystals](/crystals/).
