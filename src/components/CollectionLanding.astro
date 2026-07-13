@@ -2,9 +2,10 @@
 import Base from '../layouts/Base.astro';
 import Newsletter from './Newsletter.astro';
 const { title, description, eyebrow, h1, lede, image, intention, meaning, materials, ritual, questions, source } = Astro.props;
+const siteOrigin=Astro.site ?? new URL('https://dunhuangwithin.com/');
 const schema={
   '@context':'https://schema.org','@graph':[
-    {'@type':'CollectionPage',name:title,description,url:new URL(Astro.url.pathname,Astro.site).href,isPartOf:{'@type':'WebSite',name:'Dunhuang Within',url:'https://dunhuangwithin.com/'}},
+    {'@type':'CollectionPage',name:title,description,url:new URL(Astro.url.pathname,siteOrigin).href,isPartOf:{'@type':'WebSite',name:'Dunhuang Within',url:'https://dunhuangwithin.com/'}},
     {'@type':'FAQPage',mainEntity:questions.map((q:any)=>({'@type':'Question',name:q.q,acceptedAnswer:{'@type':'Answer',text:q.a}}))}
   ]
 };

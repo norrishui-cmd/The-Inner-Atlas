@@ -21,7 +21,8 @@ const allArticles = await getCollection('articles', ({ data }) => data.status ==
 const relatedIds = item.data.relatedContent ?? [];
 const relatedItems = relatedIds.map((id:string)=>allArticles.find(article=>article.id===id)).filter(Boolean).slice(0,4);
 const isJewelryTopic = item.id.startsWith('places/dunhuang/') && ['spiritual-jewelry','feitian-spiritual-meaning','lotus-jewelry-meaning','crystal-bracelet-intention','spiritual-bracelet-vs-mala','responsible-buddhist-jewelry','jewelry-gift-guide','cleanse-crystal-bracelet'].some(topic=>item.id.endsWith(topic));
-const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
+const siteOrigin=Astro.site ?? new URL('https://dunhuangwithin.com/');
+const canonicalUrl = new URL(Astro.url.pathname, siteOrigin).href;
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [{
@@ -36,7 +37,7 @@ const schema = {
   },{
     '@type':'BreadcrumbList',itemListElement:[
       {'@type':'ListItem',position:1,name:'Home',item:'https://dunhuangwithin.com/'},
-      ...breadcrumbs.map((crumb,index)=>({'@type':'ListItem',position:index+2,name:crumb.label,item:new URL(crumb.href,Astro.site).href}))
+      ...breadcrumbs.map((crumb,index)=>({'@type':'ListItem',position:index+2,name:crumb.label,item:new URL(crumb.href,siteOrigin).href}))
     ]
   }]
 };

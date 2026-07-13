@@ -2,7 +2,7 @@ import { defineCollection } from 'astro:content';
 import { z } from 'astro/zod';
 import { glob } from 'astro/loaders';
 
-const sources = z.object({ title: z.string(), publisher: z.string(), url: z.string().url(), accessedAt: z.string().optional(), type: z.enum(['primary','secondary']).optional() });
+const sources = z.object({ title: z.string(), publisher: z.string(), url: z.url(), accessedAt: z.string().optional(), type: z.enum(['primary','secondary']).optional() });
 const articles = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/articles' }),
   schema: z.object({
