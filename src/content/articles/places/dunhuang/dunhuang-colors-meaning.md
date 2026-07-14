@@ -10,6 +10,13 @@ status: published
 publishedAt: 2026-07-13
 author: Dunhuang Within Editorial Team
 relatedContent: [places/dunhuang/murals, places/dunhuang/caisson-ceiling-meaning, places/dunhuang/spiritual-jewelry]
+faq:
+  - question: What are the main Dunhuang colors?
+    answer: Reproductions often emphasize earth reds, ochres, greens, blues, pale grounds and dark outlines, but Mogao art spans many periods and has no single official palette.
+  - question: Do Dunhuang colors have fixed spiritual meanings?
+    answer: Not across every cave and century. Dunhuang Within labels its color-and-intention pairings as contemporary brand associations.
+  - question: Were Dunhuang mural colors originally brighter?
+    answer: Present appearance is affected by materials, environment, aging and conservation. Digital or printed reproductions should not be assumed to show the original color exactly.
 sources:
   - title: Digital Dunhuang
     publisher: Dunhuang Academy

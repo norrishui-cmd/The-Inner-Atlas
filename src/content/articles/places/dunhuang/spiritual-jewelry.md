@@ -11,6 +11,13 @@ publishedAt: 2026-07-12
 author: Dunhuang Within Editorial Team
 featured: true
 relatedContent: [places/dunhuang/feitian-spiritual-meaning, places/dunhuang/lotus-jewelry-meaning, places/dunhuang/crystal-bracelet-intention]
+faq:
+  - question: What is Dunhuang spiritual jewelry?
+    answer: It is contemporary jewelry inspired by identifiable Dunhuang art, landscapes or manuscripts and connected to a clearly explained personal intention.
+  - question: Does Dunhuang jewelry contain healing energy?
+    answer: Dunhuang Within does not present jewelry as medical treatment or measurable energy technology. Objects can support attention through meaning, touch and repeated practice.
+  - question: How can I choose a Dunhuang symbol?
+    answer: Begin with documented cultural context, then choose a contemporary intention such as courage, clarity, renewal, compassion or direction.
 sources:
   - title: Digital Dunhuang
     publisher: Dunhuang Academy

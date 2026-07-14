@@ -10,6 +10,13 @@ status: published
 publishedAt: 2026-07-13
 author: Dunhuang Within Editorial Team
 relatedContent: [places/dunhuang/three-hares-meaning, places/dunhuang/lotus-jewelry-meaning, places/dunhuang/murals]
+faq:
+  - question: What is a Dunhuang caisson ceiling?
+    answer: It is a painted ceiling-center composition, often called zaojing, organized through nested geometry, lotus forms, figures and decorative borders.
+  - question: Are all Mogao caisson ceilings the same?
+    answer: No. Their forms, imagery and palettes vary by cave, period and visual program.
+  - question: Can caisson patterns be used in jewelry?
+    answer: They can inspire contemporary geometry when the source is identified and the design is not marketed as an invented magical seal.
 sources:
   - title: Caisson ceiling materials
     publisher: Digital Dunhuang Open Material Library

@@ -11,6 +11,13 @@ publishedAt: 2026-07-13
 author: Dunhuang Within Editorial Team
 featured: true
 relatedContent: [places/dunhuang/caisson-ceiling-meaning, places/dunhuang/silk-road-crossroads, places/dunhuang/spiritual-jewelry]
+faq:
+  - question: What is the Three Hares symbol?
+    answer: It shows three hares running in a circle and sharing three ears so that each animal appears to have two.
+  - question: Where does the Three Hares motif appear at Dunhuang?
+    answer: Versions appear in multiple Mogao cave ceilings, including documented examples associated with Caves 407 and 420.
+  - question: Does the Three Hares symbol have one proven meaning?
+    answer: No single universal original meaning has been established. Interdependence is Dunhuang Within's clearly labeled contemporary reflection.
 sources:
   - title: The Travels of the Three Rabbits
     publisher: International Dunhuang Programme

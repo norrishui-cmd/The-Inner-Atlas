@@ -17,6 +17,7 @@ const breadcrumbs = segments.map((segment: string, index: number) => ({
   isLast: index === segments.length - 1,
 }));
 const sources = item.data.sources ?? [];
+const faq = item.data.faq ?? [];
 const allArticles = await getCollection('articles', ({ data }) => data.status === 'published');
 const relatedIds = item.data.relatedContent ?? [];
 const relatedItems = relatedIds.map((id:string)=>allArticles.find(article=>article.id===id)).filter(Boolean).slice(0,4);
@@ -39,7 +40,7 @@ const schema = {
       {'@type':'ListItem',position:1,name:'Home',item:'https://dunhuangwithin.com/'},
       ...breadcrumbs.map((crumb,index)=>({'@type':'ListItem',position:index+2,name:crumb.label,item:new URL(crumb.href,siteOrigin).href}))
     ]
-  }]
+  },...(faq.length?[{'@type':'FAQPage','@id':`${canonicalUrl}#faq`,mainEntity:faq.map(entry=>({'@type':'Question',name:entry.question,acceptedAnswer:{'@type':'Answer',text:entry.answer}}))}]:[])]
 };
 ---
 
@@ -60,6 +61,7 @@ const schema = {
     <p class="lede">{item.data.description}</p>
     <p class="article-byline">By <a href="/authors/dunhuang-within-editorial-team/">Dunhuang Within Editorial Team</a> · Published <time datetime={item.data.publishedAt.toISOString()}>{item.data.publishedAt.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'})}</time>{item.data.updatedAt&&<> · Updated <time datetime={item.data.updatedAt.toISOString()}>{item.data.updatedAt.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'})}</time></>}</p>
     <Content />
+    {faq.length > 0 && <section class="article-faq" id="questions"><h2>Questions people ask</h2>{faq.map(entry=><details><summary>{entry.question}</summary><p>{entry.answer}</p></details>)}</section>}
     {sources.length > 0 && (
       <section>
         <h2>Sources & further reading</h2>
@@ -72,4 +74,4 @@ const schema = {
   </article>
   <section class="section"><div class="wrap"><Newsletter compact /></div></section>
 </Base>
-<style>.article-byline{font-size:.78rem;color:var(--ink-muted);margin-bottom:3rem}.related-grid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}.related-grid a{display:flex;flex-direction:column;gap:.5rem;padding:1.5rem;border-right:1px solid var(--line);border-bottom:1px solid var(--line);text-decoration:none}.related-grid span{font-size:.85rem;color:var(--ink-muted)}@media(max-width:650px){.related-grid{grid-template-columns:1fr}.related-grid a{border-right:0}}</style>
+<style>.article-byline{font-size:.78rem;color:var(--ink-muted);margin-bottom:3rem}.article-faq{margin-top:4rem}.article-faq details{padding:1.2rem 0;border-bottom:1px solid var(--line)}.article-faq summary{cursor:pointer;font:400 1.2rem var(--serif)}.article-faq details p{margin:1rem 0 0}.related-grid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}.related-grid a{display:flex;flex-direction:column;gap:.5rem;padding:1.5rem;border-right:1px solid var(--line);border-bottom:1px solid var(--line);text-decoration:none}.related-grid span{font-size:.85rem;color:var(--ink-muted)}@media(max-width:650px){.related-grid{grid-template-columns:1fr}.related-grid a{border-right:0}}</style>

@@ -10,6 +10,13 @@ status: published
 publishedAt: 2026-07-13
 author: Dunhuang Within Editorial Team
 relatedContent: [places/dunhuang/spiritual-jewelry, places/dunhuang/crystal-bracelet-intention, places/dunhuang/responsible-buddhist-jewelry]
+faq:
+  - question: Is a spiritual bracelet the same as a mala?
+    answer: No. Spiritual bracelet is a broad contemporary category, while a mala is traditionally used to count recitations, prayers or mantras in particular religious practices.
+  - question: Does a mala always have 108 beads?
+    answer: Bead counts and formats vary across traditions. A seller should describe the specific construction and intended practice accurately.
+  - question: Can I use an intention bracelet for meditation?
+    answer: Yes, it can serve as a tactile anchor, but that does not automatically make it a formal Buddhist prayer object.
 ---
 ## The difference in one sentence
 

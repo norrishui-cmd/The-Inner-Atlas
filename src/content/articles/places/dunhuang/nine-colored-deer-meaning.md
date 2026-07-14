@@ -11,6 +11,13 @@ publishedAt: 2026-07-13
 author: Dunhuang Within Editorial Team
 featured: true
 relatedContent: [places/dunhuang/murals, places/dunhuang/spiritual-jewelry, places/dunhuang/responsible-buddhist-jewelry]
+faq:
+  - question: Where is the Nine-Colored Deer mural in Dunhuang?
+    answer: The best-known Nine-Colored Deer jataka mural is on the west wall of Mogao Cave 257, a Northern Wei cave near Dunhuang.
+  - question: What does the Nine-Colored Deer symbolize?
+    answer: Its Buddhist jataka story centers on rescue, compassion, betrayal, integrity and consequence. It should not be reduced to a generic symbol of luck.
+  - question: Is Nine-Colored Deer jewelry protective?
+    answer: Jewelry can remind a wearer of compassion and integrity, but Dunhuang Within does not claim that owning the symbol guarantees supernatural protection.
 sources:
   - title: Mogao Cave 257
     publisher: Digital Dunhuang, Dunhuang Academy

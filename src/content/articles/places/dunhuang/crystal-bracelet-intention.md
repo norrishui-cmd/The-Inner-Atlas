@@ -10,6 +10,13 @@ status: published
 publishedAt: 2026-07-12
 author: Dunhuang Within Editorial Team
 relatedContent: [places/dunhuang/spiritual-jewelry, places/dunhuang/lotus-jewelry-meaning]
+faq:
+  - question: How do I choose a crystal bracelet by intention?
+    answer: Name the quality you want to practice, then choose a color, weight, fit and texture that reliably returns that quality to attention.
+  - question: Which wrist should I wear a crystal bracelet on?
+    answer: Dunhuang Within does not teach a universal wrist rule. Choose the side that is comfortable and useful for your personal practice.
+  - question: Can a crystal bracelet treat anxiety or illness?
+    answer: A bracelet is not medical treatment. Seek qualified professional care for health concerns and use jewelry only as a personal reminder if it is helpful.
 ---
 ## Begin with the intention, not the promise
 

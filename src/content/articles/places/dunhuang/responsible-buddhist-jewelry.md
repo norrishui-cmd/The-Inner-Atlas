@@ -10,6 +10,13 @@ status: published
 publishedAt: 2026-07-13
 author: Dunhuang Within Editorial Team
 relatedContent: [places/dunhuang/spiritual-jewelry, places/dunhuang/lotus-jewelry-meaning, places/dunhuang/spiritual-bracelet-vs-mala]
+faq:
+  - question: How can I tell whether Buddhist-inspired jewelry is responsibly described?
+    answer: Look for a specific cultural source, accurate symbol or text, disclosed materials, proportionate claims and evidence for any claimed blessing.
+  - question: Is all Buddha jewelry blessed?
+    answer: No. A religious image, a retail product and a formally blessed object are not the same thing.
+  - question: Is inspired jewelry authentic?
+    answer: Inspired can be an honest term for contemporary design. Authentic, ancient or temple-blessed require specific evidence.
 ---
 ## Respect begins before purchase
 
