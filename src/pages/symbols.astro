@@ -1,5 +1,48 @@
 ---
 import Base from '../layouts/Base.astro';
-const symbols=[{id:'nine-colored-deer',name:'Nine-Colored Deer',history:'The jataka mural in Mogao Cave 257 narrates rescue, betrayal and consequence across eight scenes.',reflection:'Compassion can remain generous without abandoning integrity and discernment.',link:'/places/dunhuang/nine-colored-deer-meaning/'},{id:'three-hares',name:'Three Hares',history:'Three running hares share three ears in a circular ceiling motif found in multiple Dunhuang caves.',reflection:'What becomes possible when individuality and interdependence coexist?',link:'/places/dunhuang/three-hares-meaning/'},{id:'caisson',name:'Caisson Ceiling',history:'Mogao ceiling centers organize lotuses, geometry, figures and layered borders into radiating compositions.',reflection:'Can you move through complexity while continuing to return to a center?',link:'/places/dunhuang/caisson-ceiling-meaning/'},{id:'feitian',name:'Feitian',history:'Airborne celestial figures appear throughout Dunhuang Buddhist art with ribbons, music and changing period styles.',reflection:'What would movement without unnecessary heaviness feel like?',link:'/places/dunhuang/feitian-spiritual-meaning/'},{id:'cave',name:'Cave',history:'At Mogao, rock-cut caves became sites for Buddhist art, devotion, patronage, and preservation across centuries.',reflection:'What becomes visible only when outside noise recedes?',link:'/places/dunhuang/mogao-caves/'},{id:'oasis',name:'Oasis',history:'Dunhuang’s oasis geography supported life and movement near demanding desert routes.',reflection:'What genuinely sustains you, and what only keeps you moving?',link:'/places/dunhuang/'},{id:'road',name:'Road',history:'Dunhuang stood within changing networks of routes—not one simple road—across which goods, texts, languages, and beliefs moved.',reflection:'Can direction exist before certainty?',link:'/places/dunhuang/silk-road-crossroads/'},{id:'manuscript',name:'Manuscript',history:'Cave 17 preserved a vast, multilingual cache whose dispersal and digital reunification are part of its complex history.',reflection:'Which part of your own record has remained unread?',link:'/places/dunhuang/cave-17/'}];
+
+type Symbol = {id:string;name:string;history:string;reflection:string;link:string;image?:string;alt?:string;ratio?:'landscape'|'square'|'panorama'|'portrait';caption?:string};
+const symbols:Symbol[]=[
+  {id:'nine-colored-deer',name:'Nine-Colored Deer',history:'The jataka mural in Mogao Cave 257 narrates rescue, betrayal and consequence across eight scenes.',reflection:'Compassion can remain generous without abandoning integrity and discernment.',link:'/places/dunhuang/nine-colored-deer-meaning/'},
+  {id:'three-hares',name:'Three Hares',history:'Three running hares share three ears in a circular ceiling motif found in multiple Dunhuang caves.',reflection:'What becomes possible when individuality and interdependence coexist?',link:'/places/dunhuang/three-hares-meaning/'},
+  {id:'caisson',name:'Caisson Ceiling',history:'Mogao ceiling centers organize lotuses, geometry, figures and layered borders into radiating compositions.',reflection:'Can you move through complexity while continuing to return to a center?',link:'/places/dunhuang/caisson-ceiling-meaning/',image:'/images/dunhuang/symbol-caisson-ceiling.jpg',alt:'Painted Dunhuang-style caisson ceiling with layered geometric borders and floral center',ratio:'portrait'},
+  {id:'feitian',name:'Feitian',history:'Airborne celestial figures appear throughout Dunhuang Buddhist art with ribbons, music and changing period styles.',reflection:'What would movement without unnecessary heaviness feel like?',link:'/places/dunhuang/feitian-spiritual-meaning/',image:'/images/dunhuang/symbol-feitian.jpg',alt:'Contemporary Feitian-inspired musician figure in flowing green and red ribbons',ratio:'portrait',caption:'Contemporary Feitian-inspired artwork used as a visual interpretation, not a historical Mogao mural.'},
+  {id:'cave',name:'Cave',history:'At Mogao, rock-cut caves became sites for Buddhist art, devotion, patronage, and preservation across centuries.',reflection:'What becomes visible only when outside noise recedes?',link:'/places/dunhuang/mogao-caves/',image:'/images/dunhuang/symbol-cave.jpg',alt:'Rock-cut cave openings in a weathered cliff face',ratio:'landscape'},
+  {id:'oasis',name:'Oasis',history:'Dunhuang’s oasis geography supported life and movement near demanding desert routes.',reflection:'What genuinely sustains you, and what only keeps you moving?',link:'/places/dunhuang/',image:'/images/dunhuang/symbol-oasis.jpg',alt:'A desert oasis with water, trees and a pavilion viewed from a sand dune',ratio:'square'},
+  {id:'road',name:'Road',history:'Dunhuang stood within changing networks of routes—not one simple road—across which goods, texts, languages, and beliefs moved.',reflection:'Can direction exist before certainty?',link:'/places/dunhuang/silk-road-crossroads/',image:'/images/dunhuang/symbol-road.jpg',alt:'A straight desert road beside weathered rock formations',ratio:'panorama'},
+  {id:'manuscript',name:'Manuscript',history:'Cave 17 preserved a vast, multilingual cache whose dispersal and digital reunification are part of its complex history.',reflection:'Which part of your own record has remained unread?',link:'/places/dunhuang/cave-17/',image:'/images/dunhuang/symbol-manuscript.jpg',alt:'Historic manuscript sheet showing repeated seated Buddhist figures',ratio:'panorama'}
+];
 ---
-<Base title="Dunhuang Symbols & Spiritual Meanings" description="Explore Dunhuang symbols, their documented cultural context, contemporary spiritual meanings, and how they may inspire jewelry and daily practice."><article class="article"><nav class="breadcrumbs"><a href="/">Home</a> / Symbols</nav><p class="eyebrow">History before interpretation</p><h1>Symbols carried across time.</h1><p class="lede">We begin with what is documented, then clearly label the contemporary reflection that can shape a personal practice or wearable object.</p>{symbols.map(symbol=><section id={symbol.id}><h2>{symbol.name}</h2><h3>Historical context</h3><p>{symbol.history}</p><h3>Our contemporary reflection</h3><p>{symbol.reflection}</p><a href={symbol.link}>Explore the documented story →</a></section>)}<hr><h2>Wear the symbol with intention</h2><p>Discover how cultural context becomes a bracelet, necklace or crystal practice without unsupported healing claims.</p><a class="button" href="/objects/">Explore Objects of Intention</a></article></Base>
+
+<Base title="Dunhuang Symbols & Spiritual Meanings" description="Explore Dunhuang symbols, their documented cultural context, contemporary spiritual meanings, and how they may inspire jewelry and daily practice.">
+  <article class="article symbols-page">
+    <nav class="breadcrumbs"><a href="/">Home</a> / Symbols</nav>
+    <p class="eyebrow">History before interpretation</p>
+    <h1>Symbols carried across time.</h1>
+    <p class="lede">We begin with what is documented, then clearly label the contemporary reflection that can shape a personal practice or wearable object.</p>
+    <div class="symbol-list">
+      {symbols.map((symbol,index)=><section id={symbol.id} class:list={['symbol-card',{featured:Boolean(symbol.image),reverse:index%2===1}]}>
+        <div class="symbol-copy"><p class="symbol-index">{String(index+1).padStart(2,'0')}</p><h2>{symbol.name}</h2><h3>Historical context</h3><p>{symbol.history}</p><h3>Our contemporary reflection</h3><p>{symbol.reflection}</p><a href={symbol.link}>Explore the documented story →</a></div>
+        {symbol.image&&<figure class:list={['symbol-image',symbol.ratio]}><img src={symbol.image} alt={symbol.alt} loading="lazy" decoding="async" />{symbol.caption&&<figcaption>{symbol.caption}</figcaption>}</figure>}
+      </section>)}
+    </div>
+    <hr><h2>Wear the symbol with intention</h2><p>Discover how cultural context becomes a bracelet, necklace or crystal practice without unsupported healing claims.</p><a class="button" href="/objects/">Explore Objects of Intention</a>
+  </article>
+</Base>
+
+<style>
+  .symbol-list{margin-top:5rem;border-top:1px solid var(--line)}
+  .symbol-card{padding:3.5rem 0;border-bottom:1px solid var(--line)}
+  .symbol-card.featured{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,.82fr);gap:clamp(2rem,6vw,7rem);align-items:center}
+  .symbol-card.reverse .symbol-copy{order:2}.symbol-card.reverse .symbol-image{order:1}
+  .symbol-index{margin:0 0 1.2rem;color:var(--ink-muted);font:500 .72rem var(--sans);letter-spacing:.16em}
+  .symbol-card h2{margin:0 0 2rem;font-size:clamp(2.4rem,5vw,5.2rem)}
+  .symbol-card h3{margin:1.5rem 0 .4rem;font:500 .72rem var(--sans);letter-spacing:.13em;text-transform:uppercase;color:var(--ink-muted)}
+  .symbol-card p{max-width:39rem}.symbol-card a{display:inline-block;margin-top:1.6rem}
+  .symbol-image{margin:0;overflow:hidden;background:var(--ink)}
+  .symbol-image img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .7s ease}
+  .symbol-card:hover .symbol-image img{transform:scale(1.025)}
+  .symbol-image.landscape{aspect-ratio:3/2}.symbol-image.square{aspect-ratio:1/1}.symbol-image.panorama{aspect-ratio:16/9}.symbol-image.portrait{aspect-ratio:3/4}
+  .symbol-image.portrait img{object-position:center}.symbol-image figcaption{padding:.65rem .8rem;background:var(--ink);color:var(--moonlight);font-size:.7rem;line-height:1.45}
+  @media(max-width:720px){.symbol-list{margin-top:3rem}.symbol-card{padding:2.7rem 0}.symbol-card.featured{display:flex;flex-direction:column;gap:1.6rem;align-items:stretch}.symbol-card.reverse .symbol-copy,.symbol-card.reverse .symbol-image{order:initial}.symbol-copy{width:100%}.symbol-image{width:100%}.symbol-image.portrait{aspect-ratio:4/5}.symbol-card h2{font-size:2.7rem;margin-bottom:1.3rem}}
+</style>
