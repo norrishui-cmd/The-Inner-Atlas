@@ -24,6 +24,7 @@ const relatedItems = relatedIds.map((id:string)=>allArticles.find(article=>artic
 const isJewelryTopic = item.id.startsWith('places/dunhuang/') && ['spiritual-jewelry','feitian-spiritual-meaning','lotus-jewelry-meaning','crystal-bracelet-intention','spiritual-bracelet-vs-mala','responsible-buddhist-jewelry','jewelry-gift-guide','cleanse-crystal-bracelet','nine-colored-deer-meaning','three-hares-meaning','caisson-ceiling-meaning','dunhuang-colors-meaning'].some(topic=>item.id.endsWith(topic));
 const siteOrigin=Astro.site ?? new URL('https://dunhuangwithin.com/');
 const canonicalUrl = new URL(Astro.url.pathname, siteOrigin).href;
+const heroImageUrl = item.data.heroImage ? new URL(item.data.heroImage, siteOrigin).href : undefined;
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [{
@@ -35,6 +36,7 @@ const schema = {
     author: { '@type':'Organization','@id':'https://dunhuangwithin.com/#editorial-team',name:'Dunhuang Within Editorial Team',url:'https://dunhuangwithin.com/authors/dunhuang-within-editorial-team/' },
     publisher: { '@id': 'https://dunhuangwithin.com/#organization' },
     mainEntityOfPage: canonicalUrl,
+    ...(heroImageUrl?{image:{'@type':'ImageObject',url:heroImageUrl,width:item.data.heroWidth,height:item.data.heroHeight,caption:item.data.heroCaption??item.data.heroAlt}}:{}),
   },{
     '@type':'BreadcrumbList',itemListElement:[
       {'@type':'ListItem',position:1,name:'Home',item:'https://dunhuangwithin.com/'},
@@ -47,6 +49,7 @@ const schema = {
 <Base
   title={item.data.seoTitle ?? item.data.title}
   description={item.data.seoDescription ?? item.data.description}
+  image={item.data.heroImage ?? '/og.png'}
   noindex={item.data.noindex}
   type="article"
   schema={schema}
@@ -60,6 +63,7 @@ const schema = {
     <h1>{item.data.title}</h1>
     <p class="lede">{item.data.description}</p>
     <p class="article-byline">By <a href="/authors/dunhuang-within-editorial-team/">Dunhuang Within Editorial Team</a> · Published <time datetime={item.data.publishedAt.toISOString()}>{item.data.publishedAt.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'})}</time>{item.data.updatedAt&&<> · Updated <time datetime={item.data.updatedAt.toISOString()}>{item.data.updatedAt.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'})}</time></>}</p>
+    {item.data.heroImage&&item.data.heroAlt&&<figure class="article-hero"><img src={item.data.heroImage} alt={item.data.heroAlt} width={item.data.heroWidth} height={item.data.heroHeight} loading="eager" fetchpriority="high" decoding="async" />{item.data.heroCaption&&<figcaption>{item.data.heroCaption}</figcaption>}</figure>}
     <Content />
     {faq.length > 0 && <section class="article-faq" id="questions"><h2>Questions people ask</h2>{faq.map(entry=><details><summary>{entry.question}</summary><p>{entry.answer}</p></details>)}</section>}
     {sources.length > 0 && (
@@ -74,4 +78,4 @@ const schema = {
   </article>
   <section class="section"><div class="wrap"><Newsletter compact /></div></section>
 </Base>
-<style>.article-byline{font-size:.78rem;color:var(--ink-muted);margin-bottom:3rem}.article-faq{margin-top:4rem}.article-faq details{padding:1.2rem 0;border-bottom:1px solid var(--line)}.article-faq summary{cursor:pointer;font:400 1.2rem var(--serif)}.article-faq details p{margin:1rem 0 0}.related-grid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}.related-grid a{display:flex;flex-direction:column;gap:.5rem;padding:1.5rem;border-right:1px solid var(--line);border-bottom:1px solid var(--line);text-decoration:none}.related-grid span{font-size:.85rem;color:var(--ink-muted)}@media(max-width:650px){.related-grid{grid-template-columns:1fr}.related-grid a{border-right:0}}</style>
+<style>.article-byline{font-size:.78rem;color:var(--ink-muted);margin-bottom:3rem}.article-hero{margin:0 0 4rem}.article-hero img{width:100%;height:auto;max-height:680px;object-fit:cover}.article-hero figcaption{margin-top:.7rem;font-size:.72rem;color:var(--ink-muted)}.article-faq{margin-top:4rem}.article-faq details{padding:1.2rem 0;border-bottom:1px solid var(--line)}.article-faq summary{cursor:pointer;font:400 1.2rem var(--serif)}.article-faq details p{margin:1rem 0 0}.related-grid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}.related-grid a{display:flex;flex-direction:column;gap:.5rem;padding:1.5rem;border-right:1px solid var(--line);border-bottom:1px solid var(--line);text-decoration:none}.related-grid span{font-size:.85rem;color:var(--ink-muted)}@media(max-width:650px){.related-grid{grid-template-columns:1fr}.related-grid a{border-right:0}}</style>

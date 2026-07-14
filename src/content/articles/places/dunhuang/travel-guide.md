@@ -3,6 +3,11 @@ title: "Dunhuang Travel Guide: Mogao Caves, Desert and Silk Road"
 description: Plan a thoughtful first trip to Dunhuang with the essential sights, a practical two-day outline, transport context, and responsible cave etiquette.
 seoTitle: Dunhuang Travel Guide 2026 — Mogao Caves, Map & Itinerary
 seoDescription: "Plan a Dunhuang trip with Mogao Caves, Crescent Lake, Mingsha Mountain, Yumen Pass, a two-day itinerary, weather guidance, and an interactive map."
+heroImage: /images/dunhuang/travel-map.png
+heroAlt: Illustrated Dunhuang travel map showing Mogao Caves, passes, city and desert landscape
+heroWidth: 1408
+heroHeight: 768
+heroCaption: An editorial orientation map; use official local navigation for travel.
 contentType: guide
 cluster: places
 primaryIntent: informational

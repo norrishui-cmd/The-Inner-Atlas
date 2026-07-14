@@ -1,6 +1,11 @@
 ---
 title: Dunhuang at the Silk Road Crossroads
 description: Understand Dunhuang as a historic meeting place shaped by trade, travel, religion, art, and exchange across Eurasia.
+heroImage: /images/dunhuang/desert-caravan.jpg
+heroAlt: Caravan traveling through a desert landscape associated with Silk Road passage
+heroWidth: 565
+heroHeight: 353
+heroCaption: Dunhuang stood near changing networks of routes across the desert frontier.
 contentType: place
 cluster: places
 primaryIntent: informational

@@ -3,6 +3,11 @@ title: "Dunhuang Spiritual Jewelry: Culture, Symbols and Intention"
 description: Discover how documented Dunhuang art and landscapes can inspire contemporary bracelets, necklaces and objects of intention without false ancient or healing claims.
 seoTitle: Dunhuang Spiritual Jewelry — Symbols, Bracelets & Necklaces
 seoDescription: "Explore Dunhuang-inspired spiritual jewelry, from Feitian and lotus symbols to bracelets, necklaces and crystals chosen for personal intention."
+heroImage: /images/dunhuang/cave-buddha.jpg
+heroAlt: Buddhist cave figure representing the cultural source behind Dunhuang-inspired spiritual jewelry
+heroWidth: 768
+heroHeight: 512
+heroCaption: Cultural context comes before contemporary jewelry interpretation.
 contentType: guide
 cluster: places
 primaryIntent: informational

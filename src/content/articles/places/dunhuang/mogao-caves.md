@@ -3,6 +3,11 @@ title: "The Mogao Caves: Context for a Thoughtful Visit"
 description: Essential historical and conservation context for visiting the UNESCO-listed Mogao Caves near Dunhuang.
 seoTitle: Mogao Caves Dunhuang — History, Murals & Visitor Context
 seoDescription: "Explore the Mogao Caves in Dunhuang: a UNESCO-listed complex of Buddhist cave art, murals, sculpture, manuscripts, and Silk Road exchange."
+heroImage: /images/dunhuang/mogao-facade.jpg
+heroAlt: Cliff facade and wooden architecture of the Mogao Caves near Dunhuang
+heroWidth: 612
+heroHeight: 408
+heroCaption: The Mogao cave complex preserves a millennium of Buddhist art.
 contentType: place
 cluster: places
 primaryIntent: informational

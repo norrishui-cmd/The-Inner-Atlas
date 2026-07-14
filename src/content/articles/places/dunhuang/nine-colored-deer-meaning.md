@@ -3,6 +3,11 @@ title: "The Nine-Colored Deer of Dunhuang: Story and Meaning"
 description: Explore the Nine-Colored Deer jataka mural in Mogao Cave 257, its story of rescue and betrayal, and a responsible modern reflection on compassion and integrity.
 seoTitle: Nine-Colored Deer Meaning — Dunhuang Cave 257 Story
 seoDescription: "Discover the Nine-Colored Deer mural in Dunhuang's Mogao Cave 257: its Buddhist jataka story, eight scenes, cultural meaning and jewelry symbolism."
+heroImage: /images/dunhuang/nine-colored-deer.jpg
+heroAlt: Nine-Colored Deer mural scene inspired by the Buddhist jataka story at Dunhuang
+heroWidth: 556
+heroHeight: 359
+heroCaption: The Nine-Colored Deer story is preserved in the murals of Mogao Cave 257.
 contentType: guide
 cluster: places
 primaryIntent: informational

@@ -3,6 +3,11 @@ title: "Dunhuang Colors: Mineral Murals and Contemporary Jewelry Palettes"
 description: Explore how time, mineral pigments and conservation shape the colors associated with Dunhuang, and how designers can respond without inventing fixed spiritual meanings.
 seoTitle: Dunhuang Colors Meaning — Mural Palette & Jewelry Inspiration
 seoDescription: "Explore Dunhuang mural colors, mineral-pigment appearance, change over time and responsible color symbolism for contemporary jewelry design."
+heroImage: /images/dunhuang/worlds-mural.jpg
+heroAlt: Layered mineral-inspired colors and figures in a Dunhuang mural scene
+heroWidth: 728
+heroHeight: 410
+heroCaption: Present mural colors reflect material, time, environment and conservation.
 contentType: guide
 cluster: places
 primaryIntent: informational
