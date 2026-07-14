@@ -1,12 +1,41 @@
 ---
 import Base from '../layouts/Base.astro';
-const paths=[
-  {id:'desert-crossing',name:'The Desert Crossing',for:'Transition · uncertainty · leaving behind',text:'For the space between who you were and what comes next.',link:'/between-chapters/'},
-  {id:'hidden-cave',name:'The Hidden Cave',for:'Reflection · silence · what remains unseen',text:'A path inward, inspired by the shelter and archive of the cave—not an ancient doctrine.',link:'/places/dunhuang/cave-17/'},
-  {id:'oasis-return',name:'The Oasis Return',for:'Renewal · restoration · enoughness',text:'A return to what sustains after distance and depletion.',link:'/personal-retreat/'},
-  {id:'silk-road',name:'The Silk Road Path',for:'Direction · crossing · possible futures',text:'A path for choosing movement without demanding one certain destination.',link:'/places/dunhuang/silk-road-crossroads/'},
-  {id:'moon-path',name:'The Moon Path',for:'Cycles · endings · beginnings',text:'A contemporary reflection on change; historically specific symbolism requires sourced context.',link:'/personal-retreat/questions-for-reflection/'},
-  {id:'quiet-threshold',name:'The Quiet Threshold',for:'Identity · transition · the space between',text:'For standing honestly between a familiar past and an unnamed future.',link:'/between-chapters/when-your-old-life-no-longer-fits/'}
+type Path = {id:string;name:string;for:string;text:string;link:string;image:string;alt:string;ratio:'landscape'|'wide'|'square'|'portrait';caption?:string};
+const paths:Path[]=[
+  {id:'desert-crossing',name:'The Desert Crossing',for:'Transition · uncertainty · leaving behind',text:'For the space between who you were and what comes next.',link:'/between-chapters/',image:'/images/dunhuang/path-desert-crossing.avif',alt:'Desert landscape representing the space and uncertainty of a crossing',ratio:'landscape'},
+  {id:'hidden-cave',name:'The Hidden Cave',for:'Reflection · silence · what remains unseen',text:'A path inward, inspired by the shelter and archive of the cave—not an ancient doctrine.',link:'/places/dunhuang/cave-17/',image:'/images/dunhuang/path-hidden-cave.webp',alt:'Interior of a decorated Buddhist cave with a central shrine and mural walls',ratio:'wide'},
+  {id:'oasis-return',name:'The Oasis Return',for:'Renewal · restoration · enoughness',text:'A return to what sustains after distance and depletion.',link:'/personal-retreat/',image:'/images/dunhuang/path-oasis-return.webp',alt:'Visitor looking toward a desert oasis at sunset',ratio:'square'},
+  {id:'silk-road',name:'The Silk Road Path',for:'Direction · crossing · possible futures',text:'A path for choosing movement without demanding one certain destination.',link:'/places/dunhuang/silk-road-crossroads/',image:'/images/dunhuang/path-silk-road.jpg',alt:'Map diagram showing Dunhuang within a network of Silk Road routes',ratio:'square',caption:'A modern route map used as geographical context; historic Silk Road networks changed across time.'},
+  {id:'moon-path',name:'The Moon Path',for:'Cycles · endings · beginnings',text:'A contemporary reflection on change; historically specific symbolism requires sourced context.',link:'/personal-retreat/questions-for-reflection/',image:'/images/dunhuang/path-moon-path.webp',alt:'Desert oasis and pavilion lit at twilight beneath a pastel sky',ratio:'wide'},
+  {id:'quiet-threshold',name:'The Quiet Threshold',for:'Identity · transition · the space between',text:'For standing honestly between a familiar past and an unnamed future.',link:'/between-chapters/when-your-old-life-no-longer-fits/',image:'/images/dunhuang/path-quiet-threshold.jpg',alt:'Rock-cut Buddhist figures in a desert cliff sanctuary',ratio:'portrait'}
 ];
 ---
-<Base title="Dunhuang Paths" description="Six modern editorial paths inspired by Dunhuang landscapes and history, clearly distinguished from ancient doctrine."><article class="article"><nav class="breadcrumbs"><a href="/">Home</a> / Paths</nav><p class="eyebrow">Modern frameworks inspired by Dunhuang</p><h1>Paths</h1><p class="lede">Dunhuang was a place between worlds. Perhaps you are, too.</p><p>These paths are contemporary editorial frameworks—not historical teachings. Each begins with a documented place, landscape, or history and opens a modern practice for reflection.</p>{paths.map(path=><section id={path.id}><p class="eyebrow">{path.for}</p><h2>{path.name}</h2><p>{path.text}</p><a href={path.link}>Enter this path →</a></section>)}<hr><a class="button" href="/find-your-path/">Find Your Path</a></article></Base>
+
+<Base title="Dunhuang Paths" description="Six modern editorial paths inspired by Dunhuang landscapes and history, clearly distinguished from ancient doctrine.">
+  <article class="article paths-page">
+    <nav class="breadcrumbs"><a href="/">Home</a> / Paths</nav>
+    <p class="eyebrow">Modern frameworks inspired by Dunhuang</p>
+    <h1>Paths</h1>
+    <p class="lede">Dunhuang was a place between worlds. Perhaps you are, too.</p>
+    <p>These paths are contemporary editorial frameworks—not historical teachings. Each begins with a documented place, landscape, or history and opens a modern practice for reflection.</p>
+    <div class="path-listing">
+      {paths.map((path,index)=><section id={path.id} class:list={['path-card',{reverse:index%2===1}]}>
+        <div class="path-copy"><p class="path-number">{String(index+1).padStart(2,'0')}</p><p class="eyebrow">{path.for}</p><h2>{path.name}</h2><p>{path.text}</p><a href={path.link}>Enter this path →</a></div>
+        <figure class:list={['path-image',path.ratio]}><img src={path.image} alt={path.alt} loading={index===0?'eager':'lazy'} decoding="async" />{path.caption&&<figcaption>{path.caption}</figcaption>}</figure>
+      </section>)}
+    </div>
+    <hr><a class="button" href="/find-your-path/">Find Your Path</a>
+  </article>
+</Base>
+
+<style>
+  .path-listing{margin-top:5rem;border-top:1px solid var(--line)}
+  .path-card{display:grid;grid-template-columns:minmax(0,1fr) minmax(270px,.9fr);gap:clamp(2rem,6vw,7rem);align-items:center;padding:3.5rem 0;border-bottom:1px solid var(--line)}
+  .path-card.reverse .path-copy{order:2}.path-card.reverse .path-image{order:1}
+  .path-number{margin:0 0 1.1rem;color:var(--ink-muted);font:500 .72rem var(--sans);letter-spacing:.16em}
+  .path-copy h2{margin:.9rem 0 1.25rem;font-size:clamp(2.4rem,5vw,5.2rem)}
+  .path-copy p:not(.eyebrow):not(.path-number){max-width:33rem}.path-copy a{display:inline-block;margin-top:1.6rem}
+  .path-image{margin:0;overflow:hidden;background:var(--ink)}.path-image img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .7s ease}.path-card:hover .path-image img{transform:scale(1.025)}
+  .path-image.landscape{aspect-ratio:3/2}.path-image.wide{aspect-ratio:16/10}.path-image.square{aspect-ratio:1/1}.path-image.portrait{aspect-ratio:3/4}.path-image figcaption{padding:.65rem .8rem;background:var(--ink);color:var(--moonlight);font-size:.7rem;line-height:1.45}
+  @media(max-width:720px){.path-listing{margin-top:3rem}.path-card{display:flex;flex-direction:column;gap:1.6rem;align-items:stretch;padding:2.7rem 0}.path-card.reverse .path-copy,.path-card.reverse .path-image{order:initial}.path-copy,.path-image{width:100%}.path-image.portrait{aspect-ratio:4/5}.path-copy h2{font-size:2.7rem}}
+</style>
