@@ -3,11 +3,11 @@ title: "Lotus Jewelry Meaning in Buddhist Art and Daily Practice"
 description: Explore the lotus in Buddhist imagery, its relationship to purity and awakening, and how lotus jewelry can support a respectful daily intention.
 seoTitle: Lotus Jewelry Meaning — Buddhist Symbolism & How to Wear It
 seoDescription: "Discover lotus necklace and bracelet meanings in Buddhist art, how to wear lotus jewelry with intention, and what responsible sellers should not claim."
-heroImage: /images/dunhuang/cave-buddha.jpg
-heroAlt: Buddhist cave art context for understanding lotus imagery in spiritual jewelry
-heroWidth: 768
-heroHeight: 512
-heroCaption: Lotus imagery should be understood within its wider Buddhist visual context.
+heroImage: /images/dunhuang/lotus-mandala.jpg
+heroAlt: Contemporary blue and pink lotus mandala illustration for lotus jewelry symbolism
+heroWidth: 1600
+heroHeight: 1600
+heroCaption: A contemporary lotus composition used for reflection, not presented as an ancient Dunhuang mural.
 contentType: guide
 cluster: places
 primaryIntent: informational

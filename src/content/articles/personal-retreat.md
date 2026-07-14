@@ -1,6 +1,11 @@
 ---
 title: Personal Retreats
 description: A grounded guide to creating purposeful time away—at home, nearby, or farther afield.
+heroImage: /images/dunhuang/rock-cut-cave-retreat.jpg
+heroAlt: Rock-cut cave landscape and seated contemplative figure as a visual reference for personal retreat
+heroWidth: 1200
+heroHeight: 630
+heroCaption: A rock-cut cave landscape used as a visual reference for withdrawal and reflection; not identified here as the Mogao Caves.
 contentType: pillar
 cluster: personal-retreat
 primaryIntent: informational

@@ -3,6 +3,11 @@ title: "Crescent Lake in Dunhuang: An Oasis Among the Dunes"
 description: Explore Crescent Lake and Mingsha Mountain as a desert-oasis landscape, with practical context and a modern reflection on return.
 seoTitle: Crescent Lake Dunhuang — Mingsha Mountain & Oasis Guide
 seoDescription: Discover Crescent Lake in Dunhuang, its setting among the Mingsha dunes, the desert-oasis contrast, and how to approach the landscape responsibly.
+heroImage: /images/dunhuang/crescent-lake-mingsha.jpg
+heroAlt: Traditional pavilion and oasis vegetation beneath the Mingsha sand dunes at Dunhuang
+heroWidth: 1920
+heroHeight: 1080
+heroCaption: Architecture and vegetation stand against the immense dunes around Crescent Lake.
 contentType: place
 cluster: places
 primaryIntent: discovery

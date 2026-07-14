@@ -3,11 +3,11 @@ title: "Dunhuang Murals: A Thousand Years of Painted Worlds"
 description: An introduction to the Mogao cave murals, their subjects, historical layers, cultural exchange, and responsible interpretation.
 seoTitle: Dunhuang Murals — Art, Stories & History of the Mogao Caves
 seoDescription: "Explore Dunhuang murals across the Mogao Caves: Buddhist imagery, Silk Road scenes, daily life, landscape, and a millennium of artistic exchange."
-heroImage: /images/dunhuang/worlds-mural.jpg
-heroAlt: Dunhuang mural figures and painted Buddhist visual world
-heroWidth: 728
-heroHeight: 410
-heroCaption: Dunhuang murals preserve changing artistic worlds across centuries.
+heroImage: /images/dunhuang/dunhuang-buddhist-mural.webp
+heroAlt: Detailed Dunhuang Buddhist mural with a central Buddha assembly and architectural scenes
+heroWidth: 1200
+heroHeight: 900
+heroCaption: A richly layered Buddhist mural world associated with Dunhuang visual culture.
 contentType: guide
 cluster: places
 primaryIntent: informational
