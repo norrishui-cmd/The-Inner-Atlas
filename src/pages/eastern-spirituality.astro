@@ -1,0 +1,19 @@
+---
+import Base from '../layouts/Base.astro';
+const guides = [
+  ['Eastern spirituality and Dunhuang', 'History, symbols, exchange, and the line between lived reflection and unsupported certainty.', '/places/dunhuang/eastern-spirituality-dunhuang/'],
+  ['Oriental spirituality symbols', 'A contextual field guide to lotus, deer, hares, mandala, Feitian, and manuscript motifs.', '/places/dunhuang/oriental-spirituality-symbols/'],
+  ['Dunhuang meditation symbols', 'A five-minute practice built from observation, breath, and a written return.', '/places/dunhuang/dunhuang-meditation-symbols/'],
+  ['Dunhuang energy objects', 'How to choose bracelets, pendants, journals, and tactile objects by story and intention.', '/places/dunhuang/dunhuang-energy-objects/'],
+  ['Dunhuang-inspired home altar', 'A quiet corner for reading and attention, without pretending to recreate a sacred shrine.', '/places/dunhuang/dunhuang-home-altar/'],
+  ['Silk Road spiritual practice', 'A reflection on movement, translation, and carrying less certainty across a threshold.', '/places/dunhuang/silk-road-spiritual-practice/'],
+];
+---
+
+<Base title="Eastern Spirituality & Dunhuang" description="A grounded Dunhuang guide to Eastern spirituality, meditation symbols, energy objects, home rituals and Silk Road reflection.">
+  <article class="article spirituality-hub"><nav class="breadcrumbs"><a href="/">Home</a> / Eastern Spirituality</nav><p class="eyebrow">Dunhuang · Context · Contemporary practice</p><h1>Eastern spirituality, with a place beneath it.</h1><p class="lede">Dunhuang offers a historical starting point for exploring symbols, meditation, objects, and quiet rituals without flattening many traditions into one mystical promise.</p><div class="hub-list">{guides.map((guide, index) => <a href={guide[2]}><span>{String(index + 1).padStart(2, '0')}</span><div><h2>{guide[0]}</h2><p>{guide[1]}</p></div><strong>→</strong></a>)}</div><section class="hub-shop"><p class="eyebrow">From story to object</p><h2>Carry the question, not a promise.</h2><p>When a symbol becomes a bracelet, pendant, journal, or small object, its role is to help you remember a practice. It is not a relic, cure, or guarantee.</p><a class="button" href="/objects/">Explore Objects of Intention</a></section></article>
+</Base>
+
+<style>
+  .spirituality-hub h1{max-width:900px}.hub-list{margin-top:5rem;border-top:1px solid var(--line)}.hub-list a{display:grid;grid-template-columns:4rem 1fr auto;gap:1.5rem;align-items:center;padding:1.7rem 0;border-bottom:1px solid var(--line);text-decoration:none}.hub-list a>span{font:.75rem var(--sans);letter-spacing:.12em;color:var(--oxidized-jade)}.hub-list h2{margin:0 0 .45rem;font-size:clamp(1.7rem,3vw,3rem)}.hub-list p{margin:0;max-width:630px;color:var(--ink-muted)}.hub-list strong{font-size:1.5rem;font-weight:400}.hub-list a:hover h2{color:var(--faded-clay)}.hub-shop{margin-top:6rem;padding:clamp(2rem,5vw,4rem);background:var(--ink-deep);color:var(--moonlight)}.hub-shop h2{max-width:700px}.hub-shop p:not(.eyebrow){max-width:650px;color:rgba(238,233,223,.75)}.hub-shop .eyebrow{color:var(--sand-light)}@media(max-width:620px){.hub-list a{grid-template-columns:2.5rem 1fr}.hub-list strong{display:none}}
+</style>
