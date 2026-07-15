@@ -3,7 +3,7 @@ title: "Dunhuang Desert Retreat: A Quiet Itinerary for Reflection"
 description: "A culturally respectful Dunhuang desert retreat plan that connects caves, water, sky, and silence with a simple reflective practice."
 seoTitle: "Dunhuang Desert Retreat | Quiet Travel and Reflection Guide"
 seoDescription: "Plan a slow Dunhuang desert retreat around Mogao, Crescent Lake, and open landscape with practical pacing and grounded reflection."
-contentType: itinerary
+contentType: guide
 cluster: places
 primaryIntent: discovery
 status: published
