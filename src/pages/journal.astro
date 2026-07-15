@@ -1,5 +1,26 @@
 ---
-import Base from '../layouts/Base.astro'; import {getCollection} from 'astro:content';
-const entries=(await getCollection('articles',({data})=>data.status==='published'&&!data.noindex)).filter(item=>!['about','editorial-principles','sources-and-methodology'].includes(item.id));
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const entries = (await getCollection('articles', ({ data }) => data.status === 'published' && !data.noindex))
+  .filter((item) => !['about', 'editorial-principles', 'sources-and-methodology'].includes(item.id));
+
+const objectsStories = [
+  { title: 'The Nine-Colored Deer: a story of compassion and discernment', copy: 'A mural narrative of rescue, betrayal, and the boundaries that make compassion sustainable.', href: '/places/dunhuang/nine-colored-deer-meaning/', label: 'Mural story' },
+  { title: 'The Three Hares: one motif, three shared ears', copy: 'A small ceiling image that opens a larger question about relationship, movement, and interdependence.', href: '/places/dunhuang/three-hares-meaning/', label: 'Symbol story' },
+  { title: 'Dunhuang colors: mineral memory in a modern palette', copy: 'How cave-painting materials can inform contemporary objects without turning history into costume.', href: '/places/dunhuang/dunhuang-colors-meaning/', label: 'Material story' },
+  { title: 'Lotus: context before a personal ritual', copy: 'A grounded way to understand the lotus in Buddhist art before carrying it into a daily practice.', href: '/places/dunhuang/dunhuang-lotus-symbol/', label: 'Practice story' },
+];
 ---
-<Base title="Journal" description="The Dunhuang Within journal: quiet travel, personal retreats, digital distance, life transitions, and Dunhuang stories."><section class="section"><div class="wrap"><p class="eyebrow">Acquisition opens into Dunhuang</p><h1>Journal</h1><p class="lede">Stories and practical guides for quieter attention—each one a doorway toward a path, a practice, or Dunhuang itself.</p><div class="editorial-grid">{entries.map((entry,index)=><a class:list={["story",{lead:index===0}]} href={`/${entry.id}/`}><span class="story-meta">{entry.data.cluster.replaceAll('-',' ')}</span><h3>{entry.data.title}</h3><p>{entry.data.description}</p></a>)}</div></div></section></Base>
+
+<Base title="Journal" description="The Dunhuang Within journal: quiet travel, personal retreats, digital distance, life transitions, and Dunhuang stories.">
+  <section class="section journal-hero"><div class="wrap"><p class="eyebrow">Stories, symbols, and material memory</p><h1>Journal</h1><p class="lede">Stories and practical guides for quieter attention—each one a doorway toward a path, a practice, or Dunhuang itself.</p></div></section>
+
+  <section class="objects-journal"><div class="wrap"><div class="objects-journal__intro"><p class="eyebrow">Objects & Offerings</p><h2>Stories for what you carry.</h2><p>Before an object enters the Shop, it begins here: with a mural, a material, a place, or a question worth living with. These are cultural stories and contemporary reflections—not promises of luck, protection, or healing.</p><a class="button objects-journal__button" href="/objects/">Explore Objects of Intention</a></div><div class="objects-journal__grid">{objectsStories.map((story, index) => <a class:list={['objects-story', { featured: index === 0 }]} href={story.href}><span>{story.label}</span><h3>{story.title}</h3><p>{story.copy}</p><em>Read the story →</em></a>)}</div></div></section>
+
+  <section class="section"><div class="wrap"><p class="eyebrow">All stories</p><div class="editorial-grid">{entries.map((entry, index) => <a class:list={["story", { lead: index === 0 }]} href={`/${entry.id}/`}><span class="story-meta">{entry.data.cluster.replaceAll('-', ' ')}</span><h3>{entry.data.title}</h3><p>{entry.data.description}</p></a>)}</div></div></section>
+</Base>
+
+<style>
+  .journal-hero{padding-bottom:4rem}.objects-journal{padding:clamp(3rem,7vw,7rem) 0;background:var(--ink-deep);color:var(--moonlight)}.objects-journal .wrap{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:clamp(2rem,6vw,7rem);align-items:start}.objects-journal__intro{position:sticky;top:2rem}.objects-journal__intro h2{margin:.7rem 0 1.2rem;font-size:clamp(2.8rem,5vw,5.5rem);line-height:.92}.objects-journal__intro p{max-width:31rem;color:rgba(238,233,223,.75)}.objects-journal__intro .eyebrow{color:var(--sand-light)}.objects-journal__button{margin-top:1rem;background:var(--faded-clay);border-color:var(--faded-clay);color:#fff}.objects-journal__grid{border-top:1px solid rgba(238,233,223,.25)}.objects-story{display:block;padding:1.7rem 0;border-bottom:1px solid rgba(238,233,223,.25);color:inherit;text-decoration:none}.objects-story span{display:block;margin-bottom:.85rem;color:var(--sand-light);font:500 .68rem var(--sans);letter-spacing:.13em;text-transform:uppercase}.objects-story h3{max-width:38rem;margin:0 0 .65rem;font-size:clamp(1.5rem,2.3vw,2.4rem)}.objects-story p{max-width:38rem;margin:0;color:rgba(238,233,223,.72)}.objects-story em{display:inline-block;margin-top:1rem;font:500 .7rem var(--sans);letter-spacing:.1em;text-transform:uppercase}.objects-story:hover h3{text-decoration:underline;text-underline-offset:.17em}@media(max-width:760px){.objects-journal .wrap{grid-template-columns:1fr}.objects-journal__intro{position:static}.objects-journal__intro h2{font-size:3rem}}
+</style>
