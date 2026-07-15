@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Newsletter from '../components/Newsletter.astro';
+import '../styles/home.css';
 import { getCollection } from 'astro:content';
 const featured=(await getCollection('articles',({data})=>data.status==='published'&&data.featured)).slice(0,3);
 ---
