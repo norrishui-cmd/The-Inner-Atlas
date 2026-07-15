@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import AmbientVideo from '../components/AmbientVideo.astro';
 
 type Symbol = {id:string;name:string;history:string;reflection:string;link:string;image?:string;alt?:string;ratio?:'landscape'|'square'|'panorama'|'portrait';caption?:string};
 const symbols:Symbol[]=[
@@ -20,6 +21,7 @@ const symbols:Symbol[]=[
     <p class="eyebrow">History before interpretation</p>
     <h1>Symbols carried across time.</h1>
     <p class="lede">We begin with what is documented, then clearly label the contemporary reflection that can shape a personal practice or wearable object.</p>
+    <AmbientVideo videoId="quuEqzXu9pY" eyebrow="A short visual" title="Movement from the murals" copy="A brief moving study of Dunhuang-inspired form before entering the symbols one by one." />
     <div class="symbol-list">
       {symbols.map((symbol,index)=><section id={symbol.id} class:list={['symbol-card',{featured:Boolean(symbol.image),reverse:index%2===1}]}>
         <div class="symbol-copy"><p class="symbol-index">{String(index+1).padStart(2,'0')}</p><h2>{symbol.name}</h2><h3>Historical context</h3><p>{symbol.history}</p><h3>Our contemporary reflection</h3><p>{symbol.reflection}</p><a href={symbol.link}>Explore the documented story →</a></div>

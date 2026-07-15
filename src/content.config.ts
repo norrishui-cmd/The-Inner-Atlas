@@ -9,6 +9,7 @@ const articles = defineCollection({
   schema: z.object({
     title: z.string(), description: z.string(), seoTitle: z.string().optional(), seoDescription: z.string().optional(),
     heroImage: z.string().optional(), heroAlt: z.string().optional(), heroWidth: z.number().int().positive().optional(), heroHeight: z.number().int().positive().optional(), heroCaption: z.string().optional(),
+    videoId: z.string().regex(/^[A-Za-z0-9_-]{11}$/).optional(), videoTitle: z.string().optional(), videoEyebrow: z.string().optional(), videoCopy: z.string().optional(),
     contentType: z.enum(['pillar','guide','place','reflection','comparison']),
     cluster: z.enum(['quiet-travel','personal-retreat','digital-detox','between-chapters','places']),
     primaryIntent: z.enum(['informational','discovery','reflection','comparison']), status: z.enum(['draft','published']),

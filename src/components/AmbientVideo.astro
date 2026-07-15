@@ -1,0 +1,29 @@
+---
+interface Props {
+  videoId: string;
+  title: string;
+  eyebrow?: string;
+  copy?: string;
+}
+
+const { videoId, title, eyebrow = 'A quiet visual', copy } = Astro.props;
+const videoSrc = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&controls=0&playsinline=1&modestbranding=1&rel=0&disablekb=1&fs=0&iv_load_policy=3`;
+---
+
+<section class="ambient-video" aria-label={title}>
+  <div class="ambient-video__copy">
+    <p class="eyebrow">{eyebrow}</p>
+    <h2>{title}</h2>
+    {copy && <p>{copy}</p>}
+  </div>
+  <div class="ambient-video__frame" aria-hidden="true">
+    <iframe src={videoSrc} title={title} loading="lazy" tabindex="-1" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; encrypted-media; picture-in-picture"></iframe>
+  </div>
+</section>
+
+<style>
+  .ambient-video{display:grid;grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr);gap:clamp(1.5rem,4vw,4rem);align-items:end;margin:clamp(3rem,7vw,6rem) 0;padding:clamp(1.35rem,3vw,2.25rem);background:var(--ink-deep);color:var(--moonlight)}
+  .ambient-video__copy h2{margin:.55rem 0 1rem;font-size:clamp(2rem,3.7vw,4rem);line-height:.98}.ambient-video__copy p:not(.eyebrow){max-width:31rem;color:rgba(238,233,223,.74)}.ambient-video__copy .eyebrow{color:var(--sand-light)}
+  .ambient-video__frame{position:relative;overflow:hidden;aspect-ratio:16/9;background:#111}.ambient-video__frame::after{position:absolute;inset:0;content:'';pointer-events:none;background:linear-gradient(135deg,rgba(23,24,19,.2),transparent 45%,rgba(23,24,19,.25))}.ambient-video__frame iframe{display:block;width:100%;height:100%;border:0;pointer-events:none}
+  @media(max-width:720px){.ambient-video{grid-template-columns:1fr;gap:1.3rem;margin:3rem 0}.ambient-video__copy h2{font-size:2.4rem}}
+</style>
