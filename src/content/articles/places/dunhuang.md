@@ -11,7 +11,7 @@ publishedAt: 2026-07-10
 updatedAt: 2026-07-12
 author: Dunhuang Within Editorial Team
 featured: true
-videoId: "0uUIjgIH-5s"
+videoSrc: "/videos/enter-dunhuang.mp4"
 videoTitle: "Cave 45: a virtual encounter"
 videoEyebrow: "A short visual"
 videoCopy: "An ambient encounter with Dunhuang cave art, held within this page before the written journey begins."

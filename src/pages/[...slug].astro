@@ -65,7 +65,7 @@ const schema = {
     <p class="lede">{item.data.description}</p>
     <p class="article-byline">By <a href="/authors/dunhuang-within-editorial-team/">Dunhuang Within Editorial Team</a> · Published <time datetime={item.data.publishedAt.toISOString()}>{item.data.publishedAt.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'})}</time>{item.data.updatedAt&&<> · Updated <time datetime={item.data.updatedAt.toISOString()}>{item.data.updatedAt.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'})}</time></>}</p>
     {item.data.heroImage&&item.data.heroAlt&&<figure class="article-hero"><img src={item.data.heroImage} alt={item.data.heroAlt} width={item.data.heroWidth} height={item.data.heroHeight} loading="eager" fetchpriority="high" decoding="async" />{item.data.heroCaption&&<figcaption>{item.data.heroCaption}</figcaption>}</figure>}
-      {item.data.videoId && <AmbientVideo videoId={item.data.videoId} title={item.data.videoTitle ?? 'A quiet visual'} eyebrow={item.data.videoEyebrow} copy={item.data.videoCopy} />}
+      {(item.data.videoId || item.data.videoSrc) && <AmbientVideo videoId={item.data.videoId} src={item.data.videoSrc} title={item.data.videoTitle ?? 'A quiet visual'} eyebrow={item.data.videoEyebrow} copy={item.data.videoCopy} />}
       <Content />
     {faq.length > 0 && <section class="article-faq" id="questions"><h2>Questions people ask</h2>{faq.map(entry=><details><summary>{entry.question}</summary><p>{entry.answer}</p></details>)}</section>}
     {sources.length > 0 && (
