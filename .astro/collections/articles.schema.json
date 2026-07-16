@@ -1,0 +1,185 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "seoTitle": {
+      "type": "string"
+    },
+    "seoDescription": {
+      "type": "string"
+    },
+    "heroImage": {
+      "type": "string"
+    },
+    "heroAlt": {
+      "type": "string"
+    },
+    "heroWidth": {
+      "type": "integer",
+      "exclusiveMinimum": 0,
+      "maximum": 9007199254740991
+    },
+    "heroHeight": {
+      "type": "integer",
+      "exclusiveMinimum": 0,
+      "maximum": 9007199254740991
+    },
+    "heroCaption": {
+      "type": "string"
+    },
+    "videoId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]{11}$"
+    },
+    "videoSrc": {
+      "type": "string"
+    },
+    "videoTitle": {
+      "type": "string"
+    },
+    "videoEyebrow": {
+      "type": "string"
+    },
+    "videoCopy": {
+      "type": "string"
+    },
+    "contentType": {
+      "type": "string",
+      "enum": [
+        "pillar",
+        "guide",
+        "place",
+        "reflection",
+        "comparison"
+      ]
+    },
+    "cluster": {
+      "type": "string",
+      "enum": [
+        "quiet-travel",
+        "personal-retreat",
+        "digital-detox",
+        "between-chapters",
+        "places"
+      ]
+    },
+    "primaryIntent": {
+      "type": "string",
+      "enum": [
+        "informational",
+        "discovery",
+        "reflection",
+        "comparison"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "published"
+      ]
+    },
+    "publishedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "author": {
+      "type": "string"
+    },
+    "reviewedBy": {
+      "type": "string"
+    },
+    "featured": {
+      "type": "boolean"
+    },
+    "relatedContent": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "relatedPlaces": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "publisher": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "accessedAt": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "primary",
+              "secondary"
+            ]
+          }
+        },
+        "required": [
+          "title",
+          "publisher",
+          "url"
+        ]
+      }
+    },
+    "faq": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "question": {
+            "type": "string"
+          },
+          "answer": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "question",
+          "answer"
+        ]
+      }
+    },
+    "noindex": {
+      "type": "boolean"
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title",
+    "description",
+    "contentType",
+    "cluster",
+    "primaryIntent",
+    "status",
+    "publishedAt",
+    "author"
+  ]
+}

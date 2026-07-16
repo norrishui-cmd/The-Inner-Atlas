@@ -6,10 +6,13 @@ seoDescription: "Learn how Dunhuang Within connects documented Dunhuang art and 
 contentType: pillar
 cluster: between-chapters
 primaryIntent: informational
-status: published
+status: draft
 publishedAt: 2026-07-10
 author: Dunhuang Within Editorial Team
 ---
+<!-- Superseded by the dedicated landing page at src/pages/about.astro (routed at /about/).
+     Kept here as draft/archive so this file no longer competes for the /about/ route. -->
+
 ## Culture. Reflection. Something to carry.
 
 Dunhuang Within helps people step away from noise, reconnect with attention, and carry one chosen intention into daily life.

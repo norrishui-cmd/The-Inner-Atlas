@@ -1,0 +1,83 @@
+---
+import Base from '../layouts/Base.astro';
+
+const pillars = [
+  { n: 'I', title: 'Documented history first', copy: 'We start with cited, checkable sources on Dunhuang art, manuscripts and landscape — UNESCO records, the International Dunhuang Programme, and Dunhuang Academy scholarship — before any interpretation is layered on top.' },
+  { n: 'II', title: 'Interpretation, clearly labeled', copy: 'When history becomes modern symbolism, we say so. A cave, a road, or a color may become a prompt for reflection — but it is presented as our reading, never as settled fact or universal truth.' },
+  { n: 'III', title: 'Practice over promise', copy: 'Paths and practices are offered as things to try — quiet walking, journaling, intention-setting — not as guarantees of an outcome, a cure, or a change in fortune.' },
+  { n: 'IV', title: 'Objects that remind, not replace', copy: 'Future bracelets, necklaces and crystals are designed to hold an intention a wearer already chose. We will not describe an object as blessed, consecrated, or medically effective unless a real, named process stands behind that claim.' },
+];
+
+const teamLinks = [
+  { href: '/authors/dunhuang-within-editorial-team/', label: 'Meet the Editorial Team' },
+  { href: '/editorial-principles/', label: 'Editorial Principles' },
+  { href: '/sources-and-methodology/', label: 'Sources & Methodology' },
+];
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'AboutPage',
+      '@id': 'https://dunhuangwithin.com/about/#aboutpage',
+      name: 'About Dunhuang Within',
+      url: 'https://dunhuangwithin.com/about/',
+      description: 'How Dunhuang Within translates documented Dunhuang culture into modern inner paths, practices and responsibly designed spiritual jewelry.',
+      isPartOf: { '@id': 'https://dunhuangwithin.com/#website' },
+      about: { '@id': 'https://dunhuangwithin.com/#organization' },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://dunhuangwithin.com/' },
+        { '@type': 'ListItem', position: 2, name: 'About Us', item: 'https://dunhuangwithin.com/about/' },
+      ],
+    },
+  ],
+};
+---
+<Base
+  title="About Dunhuang Within"
+  description="How Dunhuang Within translates documented Dunhuang culture into modern inner paths, practices and responsibly designed spiritual jewelry."
+  schema={schema}
+>
+  <article class="article brand-story">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / About Us</nav>
+    <p class="eyebrow">Who we are</p>
+    <h1>Culture first. Practice second. An object, only if it earns its place.</h1>
+    <p class="lede">Dunhuang Within helps people step away from noise, reconnect with attention, and carry one chosen intention into daily life — built on documented Dunhuang history rather than invented mysticism.</p>
+
+    <h2>Why Dunhuang Within exists</h2>
+    <p>Most "spiritual" jewelry and wellness content borrows the aesthetics of a place without its history. We wanted the opposite: start with carefully sourced Dunhuang art, murals, manuscripts, Buddhist imagery and desert landscape, and only then build a clearly labeled bridge to modern reflection, quiet travel and — eventually — objects of intention.</p>
+    <p>Our first commercial chapter will be bracelets, necklaces and crystals. Every future piece will disclose its material, maker, cultural source and intended practice. An object may remind a wearer of a path they chose; it does not replace the inner work of choosing it.</p>
+
+    {pillars.map((pillar) => (
+      <section class="force">
+        <p class="eyebrow">{pillar.n}</p>
+        <h3>{pillar.title}</h3>
+        <p>{pillar.copy}</p>
+      </section>
+    ))}
+
+    <section class="dark-note">
+      <p class="eyebrow">What we will never do</p>
+      <h2>No invented rituals. No medical claims. No guaranteed fortune.</h2>
+      <p>We do not sell enlightenment, diagnose mental health conditions, invent ancient rituals, promise medical healing, guarantee fortune, or describe an item as blessed without a real, documented process behind that claim.</p>
+    </section>
+
+    <h2>Our first and defining place</h2>
+    <p>Dunhuang is not decoration for us — it is the foundation. The brand will grow outward from this one place in depth, adding new locations only once we can meet the same standard of sourcing and honesty.</p>
+
+    <h2>How the site is run</h2>
+    <p>Dunhuang Within is an independently produced editorial and cultural project. Content is drafted with the help of AI tools and reviewed against our editorial principles before publication, with sources cited on every place and practice guide. You can see exactly how we work, and where our information comes from, through the links below.</p>
+    <ul>
+      {teamLinks.map((link) => <li><a href={link.href}>{link.label}</a></li>)}
+    </ul>
+
+    <div class="actions">
+      <a class="button" href="/find-your-path/">Find Your Path</a>
+      <a class="button secondary" href="/objects/">Explore Objects</a>
+    </div>
+  </article>
+</Base>
+<style>.brand-story .force{padding:3rem 0;border-top:1px solid var(--line)}.brand-story .force h3{margin-top:.2rem}.dark-note{margin:5rem -4rem;padding:4rem;background:var(--ink-deep);color:var(--moonlight)}@media(max-width:700px){.dark-note{margin:4rem -1rem;padding:3rem 1.5rem}}</style>
