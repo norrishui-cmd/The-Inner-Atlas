@@ -7,8 +7,8 @@ primaryIntent: reflection
 status: published
 publishedAt: 2026-07-10
 author: Dunhuang Within Editorial Team
+relatedContent: [between-chapters/feeling-lost, between-chapters/career-change, between-chapters/how-to-mark-an-ending]
 ---
-## The middle is a real place
 
 A career changes, a relationship ends, a move rearranges familiar life, or achievement stops supplying meaning. The old chapter may be closing before the next has a name.
 

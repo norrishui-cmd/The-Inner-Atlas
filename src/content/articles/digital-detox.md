@@ -7,8 +7,8 @@ primaryIntent: informational
 status: published
 publishedAt: 2026-07-10
 author: Dunhuang Within Editorial Team
+relatedContent: [digital-detox/phone-free-morning, digital-detox/rules-that-work, digital-detox/social-media-break-guide]
 ---
-## A boundary, not a purity test
 
 A digital detox is a temporary, intentional reduction in digital input. It works best when you define what is being reduced, what remains available, and what will fill the newly open space.
 

@@ -13,6 +13,7 @@ status: published
 publishedAt: 2026-07-10
 author: Dunhuang Within Editorial Team
 featured: true
+relatedContent: [personal-retreat/how-to-plan, personal-retreat/signs-you-need-one, personal-retreat/on-a-budget]
 ---
 ## A retreat you design yourself
 

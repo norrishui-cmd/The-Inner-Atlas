@@ -9,7 +9,7 @@ primaryIntent: informational
 status: published
 publishedAt: 2026-07-13
 author: Dunhuang Within Editorial Team
-relatedContent: [places/dunhuang/spiritual-jewelry, places/dunhuang/crystal-bracelet-intention, places/dunhuang/responsible-buddhist-jewelry]
+relatedContent: [places/dunhuang/spiritual-jewelry, places/dunhuang/crystal-bracelet-intention, places/dunhuang/responsible-buddhist-jewelry, places/dunhuang/sandalwood-bracelet-meaning]
 ---
 ## Begin with the person, not the stone
 
