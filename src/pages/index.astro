@@ -5,7 +5,7 @@ import '../styles/home.css';
 import { getCollection } from 'astro:content';
 const featured=(await getCollection('articles',({data})=>data.status==='published'&&data.featured)).slice(0,3);
 ---
-<Base transparentHeader title="Dunhuang Within — Enter Dunhuang. Listen Inward." description="A modern inner journey through Dunhuang: paths, practices, symbols, stories, and objects of intention for the space between chapters.">
+<Base transparentHeader title="Dunhuang Travel, History & Culture Guide" description="Explore Dunhuang, China through practical travel guides, Mogao Caves history, Silk Road art, murals, symbols and thoughtful cultural stories.">
 <section class="hero hero-dunhuang"><div class="wrap"><p class="eyebrow">A Place Between Worlds</p><p class="hero-brand">Dunhuang Within</p><h1>Enter Dunhuang. Listen inward.</h1><p class="lede">Follow a modern inner journey through desert, cave, manuscript, and mural—for the moments when the old path no longer fits.</p><div class="actions"><a class="button" href="/find-your-path/">Find Your Path</a><a class="button secondary" href="/places/dunhuang/">Enter Dunhuang</a><a class="button shop-highlight" href="/objects/">Shop Objects of Intention</a></div></div></section>
 
 <section class="daily-trace"><div class="wrap"><p class="eyebrow">Today’s trace</p><p>What was hidden was not lost. Some things wait until we are ready to read them.</p><a href="/places/dunhuang/cave-17/">Enter Cave 17 →</a></div></section>

@@ -8,7 +8,7 @@ cluster: places
 primaryIntent: discovery
 status: published
 publishedAt: 2026-07-10
-updatedAt: 2026-07-12
+updatedAt: 2026-07-18
 author: Dunhuang Within Editorial Team
 featured: true
 videoSrc: "/videos/enter-dunhuang.mp4"
@@ -41,6 +41,26 @@ Let Dunhuang inspire a different relationship with time: fewer stops, deeper pre
 
 Follow the subjects that make Dunhuang more than a destination:
 
+### Plan a trip
+
+- [Complete Dunhuang travel guide](/places/dunhuang/travel-guide/)
+- [How to get to Dunhuang by flight or train](/places/dunhuang/how-to-get-there/)
+- [How many days to spend in Dunhuang](/places/dunhuang/how-many-days/)
+- [Where to stay in Dunhuang](/places/dunhuang/where-to-stay/)
+- [One-day Dunhuang itinerary](/places/dunhuang/one-day-itinerary/)
+- [Two-day Dunhuang itinerary](/places/dunhuang/two-day-itinerary/)
+- [Three-day Dunhuang itinerary](/places/dunhuang/three-day-itinerary/)
+- [What to pack for Dunhuang](/places/dunhuang/what-to-pack/)
+- [Yumen Pass and the western route](/places/dunhuang/yumen-pass/)
+- [Yang Pass history and visitor guide](/places/dunhuang/yang-pass/)
+- [Dunhuang Yardang Gobi landscape](/places/dunhuang/yardang-geopark/)
+- [Mingsha Mountain singing sand dunes](/places/dunhuang/mingsha-mountain/)
+- [Dunhuang Museum guide](/places/dunhuang/dunhuang-museum/)
+- [Yulin Caves near Guazhou](/places/dunhuang/yulin-caves/)
+- [Western Thousand Buddha Caves](/places/dunhuang/western-thousand-buddha-caves/)
+
+### Understand the caves, art and symbols
+
 - [Dunhuang spiritual jewelry: culture, symbols and intention](/places/dunhuang/spiritual-jewelry/)
 - [The spiritual meaning of Dunhuang Feitian](/places/dunhuang/feitian-spiritual-meaning/)
 - [Lotus jewelry meaning in Buddhist art](/places/dunhuang/lotus-jewelry-meaning/)
@@ -51,8 +71,12 @@ Follow the subjects that make Dunhuang more than a destination:
 - [Dunhuang manuscripts and the multilingual Library Cave archive](/places/dunhuang/manuscripts/)
 - [Cave 17: the Dunhuang Library Cave](/places/dunhuang/cave-17/)
 - [The International Dunhuang Programme](/places/dunhuang/international-dunhuang-programme/)
+- [The 868 Dunhuang Diamond Sutra](/places/dunhuang/diamond-sutra/)
+- [Wang Yuanlu and the Library Cave](/places/dunhuang/wang-yuanlu/)
+- [Aurel Stein at Dunhuang](/places/dunhuang/aurel-stein/)
+- [Paul Pelliot and the Dunhuang manuscripts](/places/dunhuang/paul-pelliot/)
 - [Crescent Lake and Mingsha Mountain](/places/dunhuang/crescent-lake/)
 - [Dunhuang sandstorms and desert safety](/places/dunhuang/sandstorms/)
 - [Interactive Dunhuang trail map](/dunhuang-map/)
 
-Travel planning remains available as supporting context in the [Dunhuang travel guide](/places/dunhuang/travel-guide/), but the central journey of Dunhuang Within is cultural and inward.
+Travel planning and cultural context belong together: logistics help you arrive, while history changes what you are able to see.

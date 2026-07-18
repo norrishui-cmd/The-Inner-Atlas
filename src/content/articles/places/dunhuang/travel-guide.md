@@ -13,8 +13,9 @@ cluster: places
 primaryIntent: informational
 status: published
 publishedAt: 2026-07-12
+updatedAt: 2026-07-18
 author: Dunhuang Within Editorial Team
-relatedContent: [places/dunhuang/mogao-caves, places/dunhuang/crescent-lake, places/dunhuang/weather-best-time, places/dunhuang/two-day-itinerary]
+relatedContent: [places/dunhuang/how-to-get-there, places/dunhuang/how-many-days, places/dunhuang/where-to-stay, places/dunhuang/three-day-itinerary]
 sources:
   - title: Mogao Caves
     publisher: UNESCO World Heritage Centre
@@ -37,19 +38,34 @@ The UNESCO-listed cave complex is the cultural anchor of Dunhuang. Its murals an
 
 ### Mingsha Mountain and Crescent Lake
 
-The dunes and oasis offer the clearest encounter with Dunhuang's physical setting. Heat, wind and sand can materially change the experience, so choose timing based on a current forecast. Read the [Crescent Lake guide](/places/dunhuang/crescent-lake/).
+The dunes and oasis offer the clearest encounter with Dunhuang's physical setting. Heat, wind and sand can materially change the experience, so choose timing based on a current forecast. Read the [Mingsha Mountain guide](/places/dunhuang/mingsha-mountain/) and [Crescent Lake guide](/places/dunhuang/crescent-lake/).
 
 ### Yumen Pass and the western route
 
-The Jade Gate landscape gives physical scale to Dunhuang's frontier history. It is outside the city and should be planned as a separate excursion with current transport and opening information confirmed locally.
+The [Yumen Pass](/places/dunhuang/yumen-pass/) landscape gives physical scale to Dunhuang's frontier history. Other route choices include [Yang Pass](/places/dunhuang/yang-pass/), the [Yardang Gobi landscape](/places/dunhuang/yardang-geopark/) and the [Western Thousand Buddha Caves](/places/dunhuang/western-thousand-buddha-caves/). Do not force all of them into one day without checking distance and visit time.
 
 ### Dunhuang Museum and the city
 
-A museum visit provides useful chronology before or after the caves. Leave time for the city itself rather than moving directly between headline sights.
+A [Dunhuang Museum](/places/dunhuang/dunhuang-museum/) visit provides useful chronology before or after the caves. Leave time for the city itself rather than moving directly between headline sights.
+
+### Yulin Caves for a deeper art trip
+
+The [Yulin Caves](/places/dunhuang/yulin-caves/) near Guazhou are a separate grotto complex and a substantial excursion. Add them when you have at least four days or a strong interest in Buddhist mural history.
 
 ## How many days do you need?
 
 Two full days cover the central experiences without rushing: one day focused on Mogao and the city, and one on the dunes or western landscape. Three days gives more room for the museum, Yumen Pass, weather changes and rest. See our [two-day Dunhuang itinerary](/places/dunhuang/two-day-itinerary/).
+
+Choose by the time you actually have:
+
+- [One day in Dunhuang](/places/dunhuang/one-day-itinerary/) is a highlights plan, not a complete visit.
+- [Two days in Dunhuang](/places/dunhuang/two-day-itinerary/) works for Mogao, the museum, Mingsha Mountain and Crescent Lake.
+- [Three days in Dunhuang](/places/dunhuang/three-day-itinerary/) adds the western Silk Road route without compressing every stop.
+- Read [how many days you need in Dunhuang](/places/dunhuang/how-many-days/) for tradeoffs by travel style.
+
+## Plan the practical details
+
+Start with [how to get to Dunhuang](/places/dunhuang/how-to-get-there/) by air or rail, then compare [where to stay in Dunhuang](/places/dunhuang/where-to-stay/) by area rather than by a short-lived hotel ranking. Our [Dunhuang packing list](/places/dunhuang/what-to-pack/) focuses on sun, dry air, sand, temperature changes and cave etiquette.
 
 ## When should you go?
 
