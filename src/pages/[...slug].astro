@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import Newsletter from '../components/Newsletter.astro';
 import AmbientVideo from '../components/AmbientVideo.astro';
 import { getCollection, render } from 'astro:content';
+import { localeAlternates } from '../lib/locale-content';
 
 export async function getStaticPaths() {
   const items = await getCollection('articles', ({ data }) => data.status === 'published');
@@ -26,6 +27,7 @@ const isJewelryTopic = item.id.startsWith('places/dunhuang/') && ['spiritual-jew
 const siteOrigin=Astro.site ?? new URL('https://dunhuangwithin.com/');
 const canonicalUrl = new URL(Astro.url.pathname, siteOrigin).href;
 const heroImageUrl = item.data.heroImage ? new URL(item.data.heroImage, siteOrigin).href : undefined;
+const alternates = localeAlternates(item.id);
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [{
@@ -54,6 +56,7 @@ const schema = {
   noindex={item.data.noindex}
   type="article"
   schema={schema}
+  alternates={alternates}
 >
   <article class="article">
     <nav class="breadcrumbs" aria-label="Breadcrumb">

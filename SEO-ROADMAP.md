@@ -9,6 +9,13 @@ Updated: 2026-07-18
 - Deepened the thin Cave 17 and Dunhuang Manuscripts pages with FAQ, primary sources, clearer uncertainty and cross-cluster links.
 - Expanded the Dunhuang hub and travel guide so every new page is linked from an established authority page.
 
+## German and French expansion completed
+
+- Added 12 German and 12 French high-value pages without translating the whole site.
+- Added reciprocal EN/DE/FR/x-default hreflang, self-canonicals and localized language tags.
+- Added localized navigation, FAQ schema, article schema and internal topic clusters.
+- See `SEO-MULTILINGUAL-DE-FR.md` for the full route and validation record.
+
 ## Objective
 
 Become the strongest independent English-language Dunhuang resource by combining practical trip planning, cited cultural knowledge, visual interpretation and responsible modern reflection. “Number one” is pursued by query cluster, not claimed as a guaranteed single universal ranking.
