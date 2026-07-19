@@ -11,7 +11,7 @@ Updated: 2026-07-18
 
 ## German and French expansion completed
 
-- Added 12 German and 12 French high-value pages without translating the whole site.
+- Added 20 German and 20 French high-value pages without translating the whole site, plus a page-aware navigation language dropdown.
 - Added reciprocal EN/DE/FR/x-default hreflang, self-canonicals and localized language tags.
 - Added localized navigation, FAQ schema, article schema and internal topic clusters.
 - See `SEO-MULTILINGUAL-DE-FR.md` for the full route and validation record.
