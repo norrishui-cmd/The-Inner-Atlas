@@ -1,14 +1,14 @@
 ---
-title: "Dunhuang Manuscripts: A Library Across Languages"
-description: Explore the Dunhuang manuscripts from Cave 17, including Buddhist texts, everyday records, multilingual documents, and the Diamond Sutra.
-seoTitle: Dunhuang Manuscripts — Cave 17, Languages & the Diamond Sutra
-seoDescription: What are the Dunhuang manuscripts? Discover the Library Cave collection, its languages, subjects, dispersal, and digital study through the IDP.
+title: "Dunhuang Manuscripts: What They Are and Where to Read Them"
+description: "The Dunhuang manuscripts include Buddhist scriptures, letters, contracts and other texts recovered from Mogao Cave 17. They record religious and everyday life in several languages."
+seoTitle: "Dunhuang Manuscripts: What They Are & Where to Read"
+seoDescription: "Explore the Dunhuang manuscripts from Cave 17, from everyday records to the 868 Diamond Sutra. Learn how to find digitized items in the IDP catalogue."
 contentType: guide
 cluster: places
 primaryIntent: informational
 status: published
 publishedAt: 2026-07-11
-updatedAt: 2026-07-18
+updatedAt: 2026-11-09
 author: Dunhuang Within Editorial Team
 relatedContent: [places/dunhuang/cave-17, places/dunhuang/diamond-sutra, places/dunhuang/paul-pelliot, places/dunhuang/international-dunhuang-programme]
 sources:
@@ -20,6 +20,10 @@ sources:
     publisher: UNESCO World Heritage Centre
     url: https://whc.unesco.org/en/list/440/
     type: primary
+  - title: Printed Diamond Sutra (catalogue record)
+    publisher: British Library / International Dunhuang Programme
+    url: https://idp.bl.uk/collection/51FDAEAFB4A24E2E9981692A98130BC8/
+    type: primary
 faq:
   - question: What are the Dunhuang manuscripts?
     answer: The term usually refers to the tens of thousands of handwritten and printed texts, documents and related objects recovered from Mogao Cave 17, plus related material from the wider Dunhuang region.
@@ -30,7 +34,7 @@ faq:
 ---
 ## What are the Dunhuang manuscripts?
 
-The term usually refers to manuscripts, printed documents, paintings, and other objects found in Mogao Cave 17, often called the Library Cave. The cave was sealed around the beginning of the eleventh century and rediscovered in 1900.
+The Library Cave held printed documents and paintings as well as manuscripts. It was sealed around the beginning of the eleventh century and reopened in 1900. Read the [Library Cave guide](/places/dunhuang/cave-17/) for the discovery and dispersal of the collection.
 
 The collection is important because it preserves far more than elite religious writing. Buddhist sutras and commentaries appear alongside contracts, inventories, letters, calendars, medical material, travel records, and evidence of daily life.
 
@@ -62,8 +66,10 @@ In the early twentieth century, large groups of materials left Dunhuang and ente
 
 A scroll can be divided across institutions or catalogued under different expedition numbers. Researchers compare handwriting, paper, joins, titles, colophons and physical dimensions to identify relationships. Digitization makes side-by-side study possible without repeatedly moving fragile originals.
 
-## How to search the archive
+## Where to read the Dunhuang manuscripts online
 
-Begin with a subject, language, shelfmark or person rather than the generic word “manuscript.” Record the holding institution and catalogue identifier. When using an online image, check rights and attribution rather than assuming that an ancient object is unrestricted in every digital reproduction.
+1. Start with the [IDP’s illustrated Cave 17 guide](https://idp.bl.uk/discover/learning/dunhuang/collection-items/cave-17-the-library-cave/) to see examples by type.
+2. Open the [official IDP catalogue](https://idp.bl.uk/) and choose **Search**. Use a shelfmark if you have one, or start with a title or subject. For the 868 *Diamond Sutra*, the British Library shelfmark is [Or.8210/P.2](https://idp.bl.uk/collection/51FDAEAFB4A24E2E9981692A98130BC8/).
+3. Check the holding institution and identifier in the record. If you want to reuse an image, check the rights and credit line for that specific image.
 
 Continue with [Cave 17 and the Dunhuang Library](/places/dunhuang/cave-17/) or learn how the [International Dunhuang Programme](/places/dunhuang/international-dunhuang-programme/) reconnects collections online.

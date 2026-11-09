@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
 import '../styles/mobile.css';
-const { title, description, image='/og.png', type='website', noindex=false, schema, transparentHeader=false, lang='en', alternates=[] } = Astro.props;
+const { title, description, image='/images/dunhuang/mogao-facade.jpg', type='website', noindex=false, schema, transparentHeader=false, lang='en', alternates=[] } = Astro.props;
 const siteOrigin=Astro.site ?? new URL('https://dunhuangwithin.com/');
 const canonical=new URL(Astro.url.pathname,siteOrigin);
 const fullTitle=title.includes('Dunhuang Within')?title:`${title} | Dunhuang Within`;

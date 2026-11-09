@@ -33,4 +33,4 @@ On day one, arrive slowly and spend time with the Mogao Caves before writing wha
 
 A notebook, a bead, or a symbol card can help you remember the question you brought. Keep it ordinary and transparent. The point is to return to observation when the journey ends, not to claim an object or landscape has cured anything.
 
-Continue with [Quiet travel in Dunhuang](/places/dunhuang/quiet-travel/), [Desert silence](/places/dunhuang/desert-silence/), or the [Dunhuang map](/map/).
+Continue with [Quiet travel in Dunhuang](/places/dunhuang/quiet-travel/), [Desert silence](/places/dunhuang/desert-silence/), or the [Dunhuang map](/dunhuang-map/).

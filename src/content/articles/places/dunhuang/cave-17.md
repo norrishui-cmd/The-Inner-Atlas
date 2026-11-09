@@ -1,14 +1,14 @@
 ---
-title: "Cave 17 at Dunhuang: The Library Cave"
-description: An evidence-based introduction to the Mogao Library Cave, its manuscript cache, and the complex history of dispersal and study.
-seoTitle: Dunhuang Library Cave — Cave 17, Manuscripts & History
-seoDescription: "Explore Dunhuang's Library Cave, also known as Mogao Cave 17: its sealed archive, manuscripts, discovery, dispersal, and digital study."
+title: "Mogao Cave 17: Dunhuang’s Library Cave"
+description: "Mogao Cave 17 is the Library Cave at Dunhuang. Reopened in 1900, the small chamber held tens of thousands of manuscripts, alongside paintings, prints and textiles."
+seoTitle: "Mogao Cave 17: Dunhuang’s Library Cave"
+seoDescription: "Where is Mogao Cave 17, and what was found there? Read about the Library Cave’s discovery, the Diamond Sutra and where to see digitized items."
 contentType: place
 cluster: places
 primaryIntent: informational
 status: published
 publishedAt: 2026-07-10
-updatedAt: 2026-07-18
+updatedAt: 2026-11-09
 author: Dunhuang Within Editorial Team
 relatedContent: [places/dunhuang/manuscripts, places/dunhuang/diamond-sutra, places/dunhuang/wang-yuanlu, places/dunhuang/international-dunhuang-programme]
 sources:
@@ -28,9 +28,9 @@ faq:
   - question: Who discovered Cave 17?
     answer: Wang Yuanlu, a Daoist priest caring for the Mogao site, uncovered the sealed chamber in 1900 from the corridor of Cave 16.
 ---
-## What Cave 17 is
+## Where is Cave 17?
 
-Cave 17 is a small side chamber connected to the corridor of Mogao Cave 16. Its modest size contrasts with the scale of what it held: tens of thousands of manuscripts and many paintings, prints, textiles and other objects accumulated before the chamber was sealed.
+The entrance to Cave 17 opens off the corridor of Cave 16 in the [Mogao Caves](/places/dunhuang/mogao-caves/) near Dunhuang. The modern name refers to the archive found inside the side chamber.
 
 ## Why it is called the Library Cave
 
@@ -62,6 +62,6 @@ The 868 Chinese [Diamond Sutra](/places/dunhuang/diamond-sutra/) is often descri
 
 ## How to explore the archive now
 
-The physical materials are spread across many institutions. The [International Dunhuang Programme](/places/dunhuang/international-dunhuang-programme/) provides a digital bridge among them. Approach Cave 17 as an archive with contested histories—not a chamber of invented secrets, supernatural codes or treasure-hunt claims.
+Start with the [IDP’s Cave 17 collection guide](https://idp.bl.uk/discover/learning/dunhuang/collection-items/cave-17-the-library-cave/) for examples of the objects found inside. The [International Dunhuang Programme](/places/dunhuang/international-dunhuang-programme/) brings records from different holding institutions together online.
 
 Continue with the full guide to the [Dunhuang manuscripts](/places/dunhuang/manuscripts/).

@@ -52,7 +52,7 @@ const schema = {
 <Base
   title={item.data.seoTitle ?? item.data.title}
   description={item.data.seoDescription ?? item.data.description}
-  image={item.data.heroImage ?? '/og.png'}
+  image={item.data.heroImage}
   noindex={item.data.noindex}
   type="article"
   schema={schema}

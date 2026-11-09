@@ -8,7 +8,7 @@ cluster: places
 primaryIntent: discovery
 status: published
 publishedAt: 2026-07-10
-updatedAt: 2026-07-18
+updatedAt: 2026-11-09
 author: Dunhuang Within Editorial Team
 featured: true
 videoSrc: "/videos/enter-dunhuang.mp4"
@@ -59,22 +59,32 @@ Follow the subjects that make Dunhuang more than a destination:
 - [Yulin Caves near Guazhou](/places/dunhuang/yulin-caves/)
 - [Western Thousand Buddha Caves](/places/dunhuang/western-thousand-buddha-caves/)
 
-### Understand the caves, art and symbols
+### Read the cave art
+
+- [Mogao Caves: history, conservation, and visitor context](/places/dunhuang/mogao-caves/)
+- [Dunhuang murals: what to look for in the Mogao Caves](/places/dunhuang/murals/)
+- [The Nine-Colored Deer mural in Cave 257](/places/dunhuang/nine-colored-deer-meaning/)
+- [Dunhuang feitian and the flying figures of Mogao](/places/dunhuang/feitian/)
+
+### Explore the Library Cave and its archive
+
+- [Mogao Cave 17: the Dunhuang Library Cave](/places/dunhuang/cave-17/)
+- [Dunhuang manuscripts and where to read them online](/places/dunhuang/manuscripts/)
+- [The International Dunhuang Programme and its catalogue](/places/dunhuang/international-dunhuang-programme/)
+- [The 868 Dunhuang Diamond Sutra](/places/dunhuang/diamond-sutra/)
+- [Wang Yuanlu and the Library Cave](/places/dunhuang/wang-yuanlu/)
+- [Aurel Stein at Dunhuang](/places/dunhuang/aurel-stein/)
+- [Paul Pelliot and the Dunhuang manuscripts](/places/dunhuang/paul-pelliot/)
+
+### Explore cultural symbols and objects
 
 - [Dunhuang spiritual jewelry: culture, symbols and intention](/places/dunhuang/spiritual-jewelry/)
 - [The spiritual meaning of Dunhuang Feitian](/places/dunhuang/feitian-spiritual-meaning/)
 - [Lotus jewelry meaning in Buddhist art](/places/dunhuang/lotus-jewelry-meaning/)
 - [How to choose a crystal bracelet by intention](/places/dunhuang/crystal-bracelet-intention/)
-- [Mogao Caves: history, conservation, and visitor context](/places/dunhuang/mogao-caves/)
-- [Dunhuang murals across a thousand years](/places/dunhuang/murals/)
-- [Dunhuang feitian and the flying figures of Mogao](/places/dunhuang/feitian/)
-- [Dunhuang manuscripts and the multilingual Library Cave archive](/places/dunhuang/manuscripts/)
-- [Cave 17: the Dunhuang Library Cave](/places/dunhuang/cave-17/)
-- [The International Dunhuang Programme](/places/dunhuang/international-dunhuang-programme/)
-- [The 868 Dunhuang Diamond Sutra](/places/dunhuang/diamond-sutra/)
-- [Wang Yuanlu and the Library Cave](/places/dunhuang/wang-yuanlu/)
-- [Aurel Stein at Dunhuang](/places/dunhuang/aurel-stein/)
-- [Paul Pelliot and the Dunhuang manuscripts](/places/dunhuang/paul-pelliot/)
+
+### Get oriented
+
 - [Crescent Lake and Mingsha Mountain](/places/dunhuang/crescent-lake/)
 - [Dunhuang sandstorms and desert safety](/places/dunhuang/sandstorms/)
 - [Interactive Dunhuang trail map](/dunhuang-map/)

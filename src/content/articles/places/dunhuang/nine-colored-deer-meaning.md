@@ -1,8 +1,8 @@
 ---
 title: "The Nine-Colored Deer of Dunhuang: Story and Meaning"
-description: Explore the Nine-Colored Deer jataka mural in Mogao Cave 257, its story of rescue and betrayal, and a responsible modern reflection on compassion and integrity.
-seoTitle: Nine-Colored Deer Meaning — Dunhuang Cave 257 Story
-seoDescription: "Discover the Nine-Colored Deer mural in Dunhuang's Mogao Cave 257: its Buddhist jataka story, eight scenes, cultural meaning and jewelry symbolism."
+description: "The Nine-Colored Deer mural in Mogao Cave 257 tells a Buddhist story about compassion and keeping your word. A deer rescues a drowning man, who later betrays it."
+seoTitle: "Nine-Colored Deer: Story and Meaning of the Dunhuang Mural"
+seoDescription: "Follow the Nine-Colored Deer story on the west wall of Mogao Cave 257 in Dunhuang. Learn how to read the mural and what its Buddhist story means."
 heroImage: /images/dunhuang/nine-colored-deer.jpg
 heroAlt: Nine-Colored Deer mural scene inspired by the Buddhist jataka story at Dunhuang
 heroWidth: 556
@@ -13,9 +13,10 @@ cluster: places
 primaryIntent: informational
 status: published
 publishedAt: 2026-07-13
+updatedAt: 2026-11-09
 author: Dunhuang Within Editorial Team
 featured: true
-relatedContent: [places/dunhuang/murals, places/dunhuang/spiritual-jewelry, places/dunhuang/responsible-buddhist-jewelry]
+relatedContent: [places/dunhuang/murals, places/dunhuang/mogao-caves, places/dunhuang/three-hares-meaning, places/dunhuang/responsible-buddhist-jewelry]
 faq:
   - question: Where is the Nine-Colored Deer mural in Dunhuang?
     answer: The best-known Nine-Colored Deer jataka mural is on the west wall of Mogao Cave 257, a Northern Wei cave near Dunhuang.
@@ -36,6 +37,10 @@ The celebrated Nine-Colored Deer jataka appears on the west wall of Mogao Cave 2
 ## What happens in the story?
 
 The deer rescues a drowning man, who promises not to reveal where the animal lives. After a queen desires the extraordinary deer, the rescued man betrays the promise and leads the king's party to it. The deer speaks before the king, exposing the betrayal. The narrative belongs to the Buddhist jataka tradition—stories of the Buddha's previous lives as a bodhisattva.
+
+## How to read the mural
+
+Open [Cave 257 in Digital Dunhuang](https://www.e-dunhuang.com/cave/10.0001/0001.0001.0257) and look for the narrow narrative on the west wall. Find the rescue scene first, then trace the episodes inward from the two ends toward the scene where the deer addresses the king. This sequence is one way into the wider world of [Dunhuang cave murals](/places/dunhuang/murals/).
 
 ## What does the Nine-Colored Deer mean?
 
