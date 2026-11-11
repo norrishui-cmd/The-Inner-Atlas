@@ -8,9 +8,10 @@ cluster: places
 primaryIntent: informational
 status: published
 publishedAt: 2026-07-13
+updatedAt: 2026-11-11
 author: Dunhuang Within Editorial Team
 featured: true
-relatedContent: [places/dunhuang/caisson-ceiling-meaning, places/dunhuang/silk-road-crossroads, places/dunhuang/spiritual-jewelry]
+relatedContent: [places/dunhuang/caisson-ceiling-meaning, places/dunhuang/murals, places/dunhuang/silk-road-crossroads, places/dunhuang/spiritual-jewelry]
 faq:
   - question: What is the Three Hares symbol?
     answer: It shows three hares running in a circle and sharing three ears so that each animal appears to have two.
@@ -30,11 +31,18 @@ sources:
 ---
 ## What is the Three Hares symbol?
 
-Three hares chase one another around a circle. Each appears to have two ears, yet only three ears are drawn in total; every ear is shared by two animals. At Dunhuang the design appears in cave-ceiling compositions, including a lotus caisson in the Sui-period Cave 420. The International Dunhuang Programme discusses the motif at the ceiling apex of Cave 407 and its appearance far beyond Dunhuang.
+Three hares run in a circle around three shared ears. Follow the outline of one animal and the two adjacent ears look like its own. Follow the next animal and one of those ears belongs to it too.
+
+## Where to look in Mogao Caves 407 and 420
+
+- **Cave 407:** Start with Ouyang Lin’s drawing in the [International Dunhuang Programme’s Three Rabbits article](https://idp.bl.uk/newsletters/summer-2001/). Find the three bodies at the center of the lotus roundel at the ceiling apex. In this example they run counterclockwise.
+- **Cave 420:** The same article lists another Sui-period example in Cave 420. In the [Dunhuang Academy’s Cave 420 record](https://www.e-dunhuang.com/cave/10.0001/0001.0001.0420), start with the square center of the main chamber ceiling, then look outward to the painted slopes. Use the Cave 407 drawing to learn the shared-ear pattern before comparing the ceiling plans.
+
+A [caisson ceiling](/places/dunhuang/caisson-ceiling-meaning/) has a distinct central field and surrounding slopes. Compare the ceiling’s layout with the wall-based stories in the [Dunhuang murals guide](/places/dunhuang/murals/).
 
 ## Does the symbol have one proven meaning?
 
-No single interpretation should be presented as settled fact. The design's movement, repetition and wide geographic distribution are documented, but a universal original meaning has not been established. Claims that it definitively guarantees fertility, prosperity or cosmic protection go beyond the available evidence.
+No single interpretation should be presented as settled fact. The IDP article documents similar designs elsewhere in Asia and in Europe. The precise route by which the motif traveled and its meaning in each setting remain open questions. Claims that it definitively guarantees fertility, prosperity or cosmic protection go beyond the available evidence.
 
 ## Dunhuang Within reflection: relationship makes the whole
 

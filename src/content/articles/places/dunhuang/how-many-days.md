@@ -1,8 +1,8 @@
 ---
 title: "How Many Days Do You Need in Dunhuang?"
-description: Decide whether to spend one, two, three or four days in Dunhuang based on Mogao Caves, desert sites, the western route and your travel pace.
-seoTitle: How Many Days in Dunhuang? 1, 2 & 3-Day Options
-seoDescription: "Most first-time visitors need two or three full days in Dunhuang. Compare one-, two-, three- and four-day plans before booking your route."
+description: For a first visit to Dunhuang, plan two full sightseeing days for the Mogao Caves and Crescent Lake, or three if you also want to visit the Silk Road sites west of town.
+seoTitle: "How Many Days in Dunhuang? Compare 1–4 Days"
+seoDescription: "Two full days cover the Mogao Caves and Crescent Lake. Add a third for the western Silk Road sites. Compare what fits in one to four days in Dunhuang."
 heroImage: /images/dunhuang/travel-map.png
 heroAlt: Illustrated map of Dunhuang attractions and surrounding desert routes
 heroWidth: 1408
@@ -12,8 +12,14 @@ cluster: places
 primaryIntent: comparison
 status: published
 publishedAt: 2026-07-18
+updatedAt: 2026-11-11
 author: Dunhuang Within Editorial Team
 relatedContent: [places/dunhuang/one-day-itinerary, places/dunhuang/two-day-itinerary, places/dunhuang/three-day-itinerary, places/dunhuang/travel-guide]
+sources:
+  - title: Mogao Caves visitor information
+    publisher: Dunhuang Academy
+    url: https://www.dha.ac.cn/skxl/mgk.htm
+    type: primary
 faq:
   - question: Is two days enough for Dunhuang?
     answer: Two full days are enough for a focused first visit combining the Mogao Caves, the city or museum, and Mingsha Mountain with Crescent Lake. They are not enough for every major outlying site at a relaxed pace.
@@ -22,9 +28,16 @@ faq:
   - question: Can you visit Dunhuang in one day?
     answer: You can see two headline experiences in one carefully planned day, but a one-day stop is vulnerable to ticket times, heat and transport delays. It should be treated as a highlights visit.
 ---
-## The practical answer
+## Compare one to four full days
 
-Plan **two full days at minimum** and **three full days if your schedule allows**. Count full sightseeing days, not the calendar dates on which you arrive and depart. Dunhuang’s main experiences are split between timed cultural visits, the city, nearby dunes and a much wider western landscape.
+Our recommendation for a first visit is **two full days for the highlights** or **three full days for the highlights and a western excursion**. Count days you can devote to sightseeing. A late arrival or early departure leaves less room to fit in a cave visit.
+
+| Full days | What to prioritize | Trade-off |
+| --- | --- | --- |
+| 1 | [Mogao Caves](/places/dunhuang/mogao-caves/), with Crescent Lake if your booking and conditions allow | Little room for delays |
+| 2 | Mogao on one day, [Mingsha Mountain and Crescent Lake](/places/dunhuang/crescent-lake/) on the other | Leave the distant western sites for another visit |
+| 3 | Add a day for the western route, such as [Yumen Pass](/places/dunhuang/yumen-pass/) | A full excursion leaves less time in town |
+| 4 | Add a slower [museum visit](/places/dunhuang/dunhuang-museum/) or keep a day flexible | Requires another full day in Dunhuang |
 
 ## One day: only the essentials
 
@@ -56,6 +69,6 @@ An extra day supports a slower museum visit, a second cultural site, an offbeat 
 
 ## A decision rule that works
 
-Start with two days. Add a third if you want the western route. Add a fourth if you prefer slow travel, have a complex inbound journey, or need weather flexibility. Whichever length you choose, confirm the Mogao reservation first and build around its fixed time.
+Start with two days. Add a third if you want the western route. Add a fourth if you prefer slow travel, have a complex inbound journey, or need weather flexibility. Check the [Dunhuang Academy’s Mogao Caves visitor information](https://www.dha.ac.cn/skxl/mgk.htm), confirm your reservation, then plan the other stops around it.
 
 Continue to the [two-day itinerary](/places/dunhuang/two-day-itinerary/) or the more complete [three-day Dunhuang itinerary](/places/dunhuang/three-day-itinerary/).

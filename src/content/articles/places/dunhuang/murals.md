@@ -13,7 +13,7 @@ cluster: places
 primaryIntent: informational
 status: published
 publishedAt: 2026-07-11
-updatedAt: 2026-11-09
+updatedAt: 2026-11-11
 author: Dunhuang Within Editorial Team
 relatedContent: [places/dunhuang/mogao-caves, places/dunhuang/nine-colored-deer-meaning, places/dunhuang/feitian, places/dunhuang/dunhuang-colors-meaning]
 sources:
@@ -51,7 +51,7 @@ Some caves also contain material evidence of ordinary and political worlds. UNES
 - **Cave 257:** Follow the [Nine-Colored Deer story](/places/dunhuang/nine-colored-deer-meaning/) on the west wall. The story unfolds from both ends toward the center. The [Digital Dunhuang cave record](https://www.e-dunhuang.com/cave/10.0001/0001.0001.0257) describes where to look.
 - **Cave 61:** Look for the [painted map of Mount Wutai](https://www.e-dunhuang.com/cave/10.0001/0001.0001.0061) on the west wall. It fills the wall and shows another way that cave art could picture a sacred landscape.
 
-[Digital Dunhuang](https://www.e-dunhuang.com/) offers virtual access to selected caves. For a physical visit, use the [Mogao Caves guide](/places/dunhuang/mogao-caves/) and confirm current access with the official visitor service.
+For ceiling painting, compare these wall scenes with the [Three Hares motif at Mogao](/places/dunhuang/three-hares-meaning/), where the shared ears form a pattern at the center of a lotus. [Digital Dunhuang](https://www.e-dunhuang.com/) offers virtual access to selected caves. For a physical visit, use the [Mogao Caves guide](/places/dunhuang/mogao-caves/) and confirm current access with the official visitor service.
 
 ## How to interpret the murals in context
 

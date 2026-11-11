@@ -1,20 +1,33 @@
 ---
 title: "Paul Pelliot at Dunhuang: Scholar of the Library Cave"
-description: Understand Paul Pelliot's 1908 selection of manuscripts from Cave 17, his language expertise and the place of the Pelliot collection in Dunhuang studies.
-seoTitle: Paul Pelliot and Dunhuang — Cave 17 Manuscripts
-seoDescription: "Learn how Paul Pelliot examined and selected Dunhuang manuscripts in 1908, where the collection went, and why his role remains debated."
+description: In 1908, French sinologist Paul Pelliot examined manuscripts in Dunhuang’s Mogao Cave 17 and acquired a selection from Wang Yuanlu. Many are held by the Bibliothèque nationale de France and can be viewed online in Gallica.
+seoTitle: "Paul Pelliot at Dunhuang: Cave 17 & Gallica"
+seoDescription: "What did Paul Pelliot do at Dunhuang in 1908? Follow the Cave 17 manuscripts to the Bibliothèque nationale de France and find an example in Gallica."
 heroImage: /images/dunhuang/symbol-manuscript.jpg
 heroAlt: Manuscript scrolls representing the multilingual material examined by Paul Pelliot at Dunhuang
-heroWidth: 1200
-heroHeight: 800
+heroWidth: 2303
+heroHeight: 1151
 contentType: guide
 cluster: places
 primaryIntent: informational
 status: published
 publishedAt: 2026-07-18
+updatedAt: 2026-11-11
 author: Dunhuang Within Editorial Team
 relatedContent: [places/dunhuang/cave-17, places/dunhuang/wang-yuanlu, places/dunhuang/aurel-stein, places/dunhuang/manuscripts]
 sources:
+  - title: Paul Pelliot and Dunhuang
+    publisher: Bibliothèque nationale de France
+    url: https://heritage.bnf.fr/france-chine/paul-pelliot-1878-1945-et-dunhuang
+    type: primary
+  - title: Pelliot chinois and Pelliot tibétain collections
+    publisher: Bibliothèque nationale de France
+    url: https://www.bnf.fr/fr/manuscrits-du-monde-asie-centrale-et-orientale
+    type: primary
+  - title: "Pelliot chinois 3847: Christian manuscript"
+    publisher: Bibliothèque nationale de France
+    url: https://heritage.bnf.fr/france-chine/pelliot-chinois-3847-manuscrit-chretien-textes-nestoriens-viiie-siecle-ap-j-c
+    type: primary
   - title: International Dunhuang Programme
     publisher: International Dunhuang Programme
     url: https://idp.bl.uk/
@@ -31,15 +44,19 @@ faq:
 
 Paul Pelliot arrived at Mogao in 1908, after Aurel Stein’s first acquisition from Cave 17. His exceptional command of Chinese and Central Asian languages allowed him to examine manuscripts quickly and select items for historical and linguistic significance.
 
-## Inside Cave 17
+## What did Paul Pelliot do in Cave 17?
 
-Famous photographs show Pelliot seated among stacks of manuscripts in the small chamber. The image communicates both scholarly concentration and the extraordinary conditions in which the archive was handled before modern conservation.
+According to [the Bibliothèque nationale de France’s account of the expedition](https://heritage.bnf.fr/france-chine/paul-pelliot-1878-1945-et-dunhuang), Pelliot began examining the manuscripts on 3 March 1908 after the caretaker [Wang Yuanlu](/places/dunhuang/wang-yuanlu/) opened [Cave 17](/places/dunhuang/cave-17/) for him. A photograph shows Pelliot seated among stacks of manuscripts in the small chamber, where he worked by candlelight.
 
-Pelliot selected texts that were rare, unusual or dated, rather than acquiring only by bulk. That expertise makes his collection exceptionally important for research; it does not remove the unequal conditions of the transaction.
+Pelliot used his knowledge of languages to select manuscripts for historical and linguistic significance, then negotiated their acquisition with Wang. The selection is important for research, and its removal also raises questions about the unequal conditions of the transaction.
 
 ## From Dunhuang to Paris
 
-The manuscripts he acquired entered French national collections, especially the Bibliothèque nationale de France. Their catalog prefix “Pelliot chinois” or related Pelliot designations still appears in scholarship. Murals and objects connected to French expeditions followed different institutional paths.
+The manuscripts he acquired entered French national collections, especially the Bibliothèque nationale de France (BnF). The BnF groups many of them in [collections with shelfmark prefixes such as *Pelliot chinois* and *Pelliot tibétain*](https://www.bnf.fr/fr/manuscrits-du-monde-asie-centrale-et-orientale). The prefix and number together identify an item. Paintings and other objects brought back by the mission followed different institutional paths, including through the Louvre to the Musée Guimet.
+
+## How to find a Pelliot manuscript online
+
+Start with the exact shelfmark in the BnF collection guide. For example, the library identifies [*Pelliot chinois 3847*](https://heritage.bnf.fr/france-chine/pelliot-chinois-3847-manuscrit-chretien-textes-nestoriens-viiie-siecle-ap-j-c) as a Christian manuscript in Chinese. Open the [digitized manuscript in Gallica](https://gallica.bnf.fr/ark:/12148/btv1b8303183c), the BnF’s digital library, and keep the shelfmark alongside the link when you cite it.
 
 ## Why his role is debated
 

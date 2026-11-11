@@ -1,8 +1,8 @@
 ---
 title: "The Dunhuang Diamond Sutra: The 868 Printed Scroll"
-description: Learn why the Diamond Sutra from Cave 17 is called the world's earliest complete dated printed book and what its colophon and frontispiece show.
-seoTitle: Dunhuang Diamond Sutra — 868 World's Earliest Dated Book
-seoDescription: "Explore the 868 Diamond Sutra from Dunhuang Cave 17: its woodblock printing, illustrated frontispiece, donor colophon and modern location."
+description: "The Dunhuang Diamond Sutra is a Chinese woodblock-printed scroll dated 11 May 868. Found in Mogao Cave 17, it is held by the British Library under shelfmark Or.8210/P.2."
+seoTitle: Dunhuang Diamond Sutra (868) — British Library Scroll
+seoDescription: "Find the 868 Diamond Sutra from Mogao Cave 17 in the British Library catalogue. Learn how to identify its opening illustration and dated colophon."
 heroImage: /images/dunhuang/symbol-manuscript.jpg
 heroAlt: Manuscript imagery representing the printed Diamond Sutra from Dunhuang Cave 17
 heroWidth: 1200
@@ -12,12 +12,17 @@ cluster: places
 primaryIntent: informational
 status: published
 publishedAt: 2026-07-18
+updatedAt: 2026-11-11
 author: Dunhuang Within Editorial Team
 relatedContent: [places/dunhuang/cave-17, places/dunhuang/manuscripts, places/dunhuang/wang-yuanlu, places/dunhuang/aurel-stein]
 sources:
-  - title: "Buddhist texts: The Diamond Sutra"
+  - title: Printed Diamond Sutra (Or.8210/P.2)
+    publisher: British Library / International Dunhuang Programme
+    url: https://idp.bl.uk/collection/51FDAEAFB4A24E2E9981692A98130BC8/
+    type: primary
+  - title: What was stored in Cave 17?
     publisher: International Dunhuang Programme
-    url: https://idp.bl.uk/discover/learning/buddhism-on-the-silk-roads/articles/buddhism-on-the-ground/buddhist-texts-the-diamond-sutra/
+    url: https://idp.bl.uk/discover/learning/dunhuang/dunhuang-articles/cave-17-the-library-cave/what-was-stored-in-cave-17/
     type: primary
 faq:
   - question: Why is the Dunhuang Diamond Sutra famous?
@@ -33,9 +38,9 @@ The celebrated Dunhuang Diamond Sutra is a Chinese woodblock-printed scroll made
 
 ## Why the date matters
 
-A colophon records that Wang Jie commissioned the work for free distribution in memory of his parents on 11 May 868. Because the object is substantially complete and explicitly dated, it is commonly described as the world’s earliest complete dated printed book—not the first printing experiment of any kind.
+The colophon is the short note at the end of the scroll. It identifies Wang Jie as the sponsor and dates the printing to 11 May 868. That combination of an explicit date and a complete text is why the scroll is described as the earliest known complete dated printed book. The [IDP’s Cave 17 object guide](https://idp.bl.uk/discover/learning/dunhuang/dunhuang-articles/cave-17-the-library-cave/what-was-stored-in-cave-17/) explains the date and how the scroll was printed.
 
-That distinction matters. Printing existed before 868, but surviving objects are fragmentary or undated. The scroll gives historians a secure point in the development and circulation of woodblock printing.
+Woodblock printing already existed by 868. The scroll gives historians a dated example of a developed printing practice.
 
 ## What “Diamond” means
 
@@ -47,6 +52,11 @@ The scroll was among the materials in Dunhuang’s [Library Cave](/places/dunhua
 
 Read about [Wang Yuanlu](/places/dunhuang/wang-yuanlu/) and [Aurel Stein](/places/dunhuang/aurel-stein/) before reducing that encounter to either a heroic discovery story or a single-villain narrative.
 
-## How to explore it today
+## How to find and read the 868 scroll online
 
-Digital access allows readers to inspect the frontispiece, paper joins, text and colophon without exposing the original to constant display. Use the [International Dunhuang Programme](/places/dunhuang/international-dunhuang-programme/) to connect this object with the wider multilingual manuscript archive.
+Open the [British Library item record in the International Dunhuang Programme](https://idp.bl.uk/collection/51FDAEAFB4A24E2E9981692A98130BC8/). Match the shelfmark **Or.8210/P.2**, the date **868** and the **British Library** holding institution. Other copies of the same text have their own shelfmarks.
+
+- **At the opening:** Find the illustrated frontispiece of the Buddha teaching. Compare it with the text panels that follow.
+- **At the end:** Look for the colophon after the main text. The [IDP’s illustrated object guide](https://idp.bl.uk/discover/learning/buddhism-on-the-silk-roads/collection-items/buddhism-on-the-ground-collection-items/) shows both ends of the scroll if you prefer an annotated introduction.
+
+Use the [Dunhuang manuscripts guide](/places/dunhuang/manuscripts/) to trace other kinds of documents from the Library Cave.
