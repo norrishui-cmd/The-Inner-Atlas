@@ -12,6 +12,7 @@ cluster: places
 primaryIntent: informational
 status: published
 publishedAt: 2026-07-18
+updatedAt: 2026-11-11
 author: Dunhuang Within Editorial Team
 relatedContent: [places/dunhuang/travel-guide, places/dunhuang/mogao-caves, places/dunhuang/crescent-lake, places/dunhuang/yumen-pass]
 sources:
@@ -19,11 +20,19 @@ sources:
     publisher: UNESCO World Heritage Centre
     url: https://whc.unesco.org/en/list/440/
     type: primary
+  - title: Gansu tourism itineraries for May Day 2026
+    publisher: Gansu Provincial Department of Culture and Tourism
+    url: https://www.gswbj.gov.cn/a/2026/04/30/28139.html
+    type: primary
+  - title: Western Thousand Buddha Caves visitor information
+    publisher: Dunhuang Academy
+    url: https://www.dha.ac.cn/skxl/xqfd.htm
+    type: primary
 faq:
   - question: What is the best three-day Dunhuang itinerary?
     answer: Use one day for Mogao Caves and city context, one for the museum plus Mingsha Mountain and Crescent Lake, and one for the western Silk Road route. Adjust the order around the fixed cave reservation and forecast.
   - question: Do I need a driver for three days in Dunhuang?
-    answer: Not for every day, but the dispersed western-route sites usually require planned transport. Compare a licensed driver or tour with any current public options and confirm what is included.
+    answer: You can use local transport around town and plan the western day separately. Choose a public service if it covers both directions and your chosen stops on your date, or arrange a round trip with a licensed driver or tour operator.
 ---
 ## Why three days works
 
@@ -43,9 +52,12 @@ This day should feel spacious. The desert site can involve sun, wind, sand and s
 
 ## Day 3: the western Silk Road route
 
-Reserve the third day for the landscapes and historic sites west of Dunhuang. Common route ideas connect Yumen Pass, sections associated with Han frontier defense and Yardang terrain; some plans emphasize Yang Pass instead. Distances are significant and combinations change with access, road conditions and the tour or driver selected.
+Keep a full day for the sites west of Dunhuang. Pick a pair of stops based on what you most want to see, then check the routes on the [Dunhuang map](/dunhuang-map/).
 
-Choose two or three priorities instead of collecting every advertised stop. Read the [Yumen Pass guide](/places/dunhuang/yumen-pass/) before deciding what the place means to your journey. Confirm the vehicle, legal operator, pickup, included tickets, meal plan and return time in writing.
+- **Yumen Pass and Yardang** give you a Han frontier site and the wind-shaped rock formations of the Gobi in one day. See [Yumen Pass](/places/dunhuang/yumen-pass/) and the [Yardang scenic area](/places/dunhuang/yardang-geopark/).
+- **Yang Pass and the Western Thousand Buddha Caves** pair Silk Road history with another grotto visit after Mogao. See [Yang Pass](/places/dunhuang/yang-pass/) and check the [Western Thousand Buddha Caves guide](/places/dunhuang/western-thousand-buddha-caves/) before committing to both stops. Cave access can change with conditions.
+
+If you are traveling without a car, check with the Dunhuang coach station whether a public service covers both stops and the return to town on your date. If it does, confirm the boarding point, time at each site and the return departure. Otherwise, arrange a round trip with a licensed driver or tour operator before leaving town. Ask for the pickup and return times, the included stops and whether admission or on-site shuttles are separate.
 
 ## Where to place arrival and departure
 

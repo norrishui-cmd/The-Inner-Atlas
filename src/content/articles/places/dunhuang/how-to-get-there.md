@@ -12,8 +12,14 @@ cluster: places
 primaryIntent: informational
 status: published
 publishedAt: 2026-07-18
+updatedAt: 2026-11-11
 author: Dunhuang Within Editorial Team
 relatedContent: [places/dunhuang/travel-guide, places/dunhuang/how-many-days, places/dunhuang/where-to-stay, places/dunhuang/weather-best-time]
+sources:
+  - title: China Railway 12306 (English)
+    publisher: China Railway
+    url: https://www.12306.cn/en/index.html
+    type: primary
 faq:
   - question: What is the easiest way to get to Dunhuang?
     answer: Flying is usually the simplest option when a suitable connection is available. Rail can be more convenient when Dunhuang is one stop in a longer northwestern China journey. Compare the complete door-to-door route, not only the longest leg.
@@ -36,7 +42,13 @@ An evening arrival can be useful if it preserves the next morning for a booked c
 
 Rail makes sense when you are already traveling through Gansu or other northwestern destinations. It also turns the change from city to desert into part of the journey. The tradeoff is time: compare the full itinerary, including transfers and the trip from the station to your accommodation.
 
-Station names and train patterns must be checked for the date of travel. Use the official Chinese rail booking channel or a reputable agent that displays the actual train number and stations. Do not assume that a search for “Dunhuang” and a nearby regional station are interchangeable.
+Use [China Railway’s English 12306 site](https://www.12306.cn/en/index.html) to check the train number and exact departure and arrival stations for your travel date.
+
+### Turpan to Dunhuang, then Jiayuguan or Zhangye
+
+Search Turpan to Dunhuang and Dunhuang to your next city as separate legs in 12306. Compare the options for each date. If the best train ends at Liuyuan (柳园) or Liuyuan South (柳园南), confirm a separate transfer to Dunhuang before you book and arrange pickup at the station listed on your ticket.
+
+Check the onward departure station as carefully as the arrival station. Leave time between a road transfer and a reserved train or cave visit. Work out how much sightseeing time is left before deciding whether to use the [one-day Dunhuang itinerary](/places/dunhuang/one-day-itinerary/).
 
 ## Flight or train: how to choose
 
