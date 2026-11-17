@@ -11,6 +11,7 @@ cluster: places
 primaryIntent: informational
 status: published
 publishedAt: 2026-07-10
+updatedAt: 2026-11-17
 author: Dunhuang Within Editorial Team
 sources:
   - title: Silk Roads Programme
@@ -21,6 +22,12 @@ sources:
 ## Routes, plural
 
 “The Silk Road” is better understood as changing networks of land and maritime routes than as one road. Dunhuang’s oasis position made it an important point of passage and exchange.
+
+On the atlas, start at Chang’an and travel west through Lanzhou. Select Dunhuang, the third stop, to locate the oasis at the western end of the Hexi Corridor. Then follow the route to Turpan and Kashgar.
+
+<p><a class="button" href="https://chronicamaps.com/#y600-t-silk-road-r-world-l-en" data-bridge-id="dw-crossroads-atlas">Trace the Silk Road through Dunhuang</a></p>
+
+You can also browse the <a href="https://chronicamaps.com/en/route/silk-road" data-bridge-id="dw-crossroads-stops">full list of Silk Road stops on Chronica Maps</a>.
 
 The art and documents associated with Dunhuang reflect multilingual, multiethnic, and religiously diverse worlds. That complexity resists a simple East-meets-West slogan.
 

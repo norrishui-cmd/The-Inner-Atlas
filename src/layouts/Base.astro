@@ -6,6 +6,9 @@ const siteOrigin=Astro.site ?? new URL('https://dunhuangwithin.com/');
 const canonical=new URL(Astro.url.pathname,siteOrigin);
 const fullTitle=title.includes('Dunhuang Within')?title:`${title} | Dunhuang Within`;
 const googleSiteVerification=import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
+const bridgePages = ['/dunhuang-map/', '/places/dunhuang/silk-road-crossroads/', '/places/dunhuang/cave-17/'];
+const includeBridge = bridgePages.includes(Astro.url.pathname.replace(/\/?$/, '/'));
+const bridgeMeasurement = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
 const alternateHref=(code:string,fallback:string)=>alternates.find((item:{lang:string,href:string})=>item.lang===code)?.href??fallback;
 const languageLabel=lang==='de'?'Deutsch':lang==='fr'?'Français':'English';
 const home=lang==='de'?'/de/dunhuang/':lang==='fr'?'/fr/dunhuang/':'/';
@@ -21,6 +24,7 @@ const entitySchema={'@context':'https://schema.org','@graph':[{'@type':'Organiza
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width">
   <script is:inline async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9505220977121599" crossorigin="anonymous"></script>
+  {includeBridge && <script is:inline defer src="/atlas-bridge.js" data-site="dunhuang" data-ga={bridgeMeasurement}></script>}
   <title>{fullTitle}</title><meta name="description" content={description}>
   <meta name="robots" content={noindex?'noindex,nofollow':'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1'}>
   <link rel="canonical" href={canonical}>

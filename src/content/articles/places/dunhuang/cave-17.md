@@ -8,7 +8,7 @@ cluster: places
 primaryIntent: informational
 status: published
 publishedAt: 2026-07-10
-updatedAt: 2026-11-09
+updatedAt: 2026-11-17
 author: Dunhuang Within Editorial Team
 relatedContent: [places/dunhuang/manuscripts, places/dunhuang/diamond-sutra, places/dunhuang/wang-yuanlu, places/dunhuang/international-dunhuang-programme]
 sources:
@@ -31,6 +31,8 @@ faq:
 ## Where is Cave 17?
 
 The entrance to Cave 17 opens off the corridor of Cave 16 in the [Mogao Caves](/places/dunhuang/mogao-caves/) near Dunhuang. The modern name refers to the archive found inside the side chamber.
+
+<a href="https://chronicamaps.com/en/landmark/mogao" data-bridge-id="dw-cave-mogao">Locate the Mogao Caves on the historical map</a> to see where the cave complex lies southeast of the Dunhuang oasis.
 
 ## Why it is called the Library Cave
 

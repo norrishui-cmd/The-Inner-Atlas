@@ -12,7 +12,40 @@ import AmbientVideo from '../components/AmbientVideo.astro';
     <a href="#dunhuang-map-guides">Browse the place and mural guides ↓</a>
   </div>
 </section>
-<section class="atlas" id="dunhuang-atlas"><div class="wrap"><div class="trail-tabs" role="group" aria-label="Choose a Dunhuang map"><button class="trail-tab active" type="button" data-layer="travel" aria-pressed="true"><span>01</span> Travel Map</button><button class="trail-tab" type="button" data-layer="buddha" aria-pressed="false"><span>02</span> Buddha Traces</button><button class="trail-tab" type="button" data-layer="myth" aria-pressed="false"><span>03</span> Myth & Murals</button></div><div class="map-layout"><div class="map-field" role="group" aria-label="Interactive illustrated map of Dunhuang"><img class="map-base-image" src="/images/dunhuang/travel-map.png" alt="Illustrated travel map of Dunhuang" /><div class="map-vignette"></div><div class="markers"></div><p class="map-hint">Select a numbered point</p></div><aside class="map-detail" aria-live="polite"><div class="detail-image"><img src="/images/dunhuang/mogao-facade.jpg" alt="Mogao Caves facade" /></div><p class="eyebrow detail-kind">Travel · Cultural place</p><h2 class="detail-title">Mogao Caves</h2><p class="detail-meta">Southeast of the Dunhuang oasis</p><p class="detail-copy">A complex of cave sanctuaries preserving a millennium of Buddhist art and cultural exchange.</p><a class="button secondary detail-link" href="/places/dunhuang/mogao-caves/">Enter this story</a></aside></div></div></section>
+<section class="atlas" id="dunhuang-atlas">
+  <div class="wrap">
+    <div class="trail-tabs" role="group" aria-label="Choose a Dunhuang map">
+      <button class="trail-tab active" type="button" data-layer="travel" aria-pressed="true"><span>01</span> Travel Map</button>
+      <button class="trail-tab" type="button" data-layer="buddha" aria-pressed="false"><span>02</span> Buddha Traces</button>
+      <button class="trail-tab" type="button" data-layer="myth" aria-pressed="false"><span>03</span> Myth &amp; Murals</button>
+    </div>
+    <div class="map-layout">
+      <div class="map-field" role="group" aria-label="Interactive illustrated map of Dunhuang">
+        <img class="map-base-image" src="/images/dunhuang/travel-map.png" alt="Illustrated travel map of Dunhuang" />
+        <div class="map-vignette"></div>
+        <div class="markers"></div>
+        <p class="map-hint">Select a numbered point</p>
+      </div>
+      <label class="map-place-picker" hidden>
+        Choose a map point
+        <select aria-controls="map-point-details"></select>
+      </label>
+      <aside class="map-detail" id="map-point-details" aria-live="polite">
+        <div class="detail-image"><img src="/images/dunhuang/mogao-facade.jpg" alt="Mogao Caves facade" /></div>
+        <p class="eyebrow detail-kind">Travel · Cultural place</p>
+        <h2 class="detail-title">Mogao Caves</h2>
+        <p class="detail-meta">Southeast of the Dunhuang oasis</p>
+        <p class="detail-copy">A complex of cave sanctuaries preserving a millennium of Buddhist art and cultural exchange.</p>
+        <a class="button secondary detail-link" href="/places/dunhuang/mogao-caves/">Enter this story</a>
+      </aside>
+    </div>
+    <aside class="historical-atlas" aria-labelledby="historical-atlas-title">
+      <h2 id="historical-atlas-title">Where was Dunhuang on the Silk Road?</h2>
+      <p>The oasis lay at the western end of the Hexi Corridor. See how Dunhuang connects to the routes across Central Asia, and follow the city through the centuries.</p>
+      <a href="https://chronicamaps.com/en/city/dunhuang" data-bridge-id="dw-trail-city">Explore Dunhuang’s historical map and timeline on Chronica Maps →</a>
+    </aside>
+  </div>
+</section>
 <section class="section map-film"><div class="wrap"><AmbientVideo src="/videos/trail-map.mp4" eyebrow="A short visual" title="Reading the Dunhuang trail" copy="A moving companion to the map: follow the routes, thresholds, and quiet distances that shaped Dunhuang." /></div></section>
 <section class="section map-guides" id="dunhuang-map-guides" aria-labelledby="dunhuang-map-guides-title">
   <div class="wrap">
@@ -51,10 +84,10 @@ travel:{src:'/images/dunhuang/travel-map.png',alt:'Illustrated travel map of Dun
 {id:'white-horse',name:'White Horse Pagoda',kind:'Travel · Memorial place',meta:'Near Dunhuang city',copy:'A pagoda connected in local tradition with the journey of the Buddhist translator Kumārajīva.',image:'/images/dunhuang/white-horse-pagoda.webp',alt:'White Horse Pagoda against a blue sky',link:'/places/dunhuang/',x:80,y:63},
 {id:'museum',name:'Dunhuang Museum',kind:'Travel · Historical collection',meta:'Dunhuang city',copy:'A place to establish regional and Silk Road context before entering the wider landscape.',image:'/images/dunhuang/dunhuang-museum.jpg',alt:'Reconstructed Dunhuang cave display inside a museum',link:'/places/dunhuang/dunhuang-museum/',x:81,y:77}]},
 buddha:{src:'/images/dunhuang/buddha-map.png',alt:'Illustrated map of Buddhist traces around Dunhuang',points:[
-{id:'great-buddha',name:'The Great Buddha',kind:'Buddha Trace · Monumental image',meta:'Mogao Cave 96 tradition',copy:'A monumental Buddha held within the cliff architecture, approached as living religious and cultural heritage.',image:'/images/dunhuang/cave-buddha.jpg',alt:'Monumental Buddha inside a Mogao cave',link:'/places/dunhuang/mogao-caves/',x:34,y:48},
-{id:'reclining',name:'The Reclining Buddha',kind:'Buddha Trace · Parinirvana',meta:'Mogao cave sanctuary',copy:'The reclining form evokes the Buddha’s parinirvana and is treated with religious respect, not as a generic wellness image.',image:'/images/dunhuang/reclining-buddha.jpg',alt:'Reclining Buddha inside a painted cave',link:'/brand-story/',x:28,y:52},
-{id:'cave-assembly',name:'The Sacred Assembly',kind:'Buddha Trace · Painted sanctuary',meta:'Mogao cave cluster',copy:'Painted and sculpted figures surround the central image, expressing protection, teaching, and devotion.',image:'/images/dunhuang/cave-figures.jpg',alt:'Sacred figures inside a painted cave',link:'/symbols/',x:27,y:50},
-{id:'cliff-buddhas',name:'Buddhas of the Cliff',kind:'Buddha Trace · Rock-cut devotion',meta:'Dunhuang cave landscape',copy:'Figures carved into stone make devotion part of the landscape itself: enduring, weathered, and watched over.',image:'/images/dunhuang/cliff-buddhas.jpg',alt:'Buddha figures carved into a cliff',link:'/symbols/',x:21,y:47},
+{id:'great-buddha',crowded:true,name:'The Great Buddha',kind:'Buddha Trace · Monumental image',meta:'Mogao Cave 96 tradition',copy:'A monumental Buddha held within the cliff architecture, approached as living religious and cultural heritage.',image:'/images/dunhuang/cave-buddha.jpg',alt:'Monumental Buddha inside a Mogao cave',link:'/places/dunhuang/mogao-caves/',x:34,y:48},
+{id:'reclining',crowded:true,name:'The Reclining Buddha',kind:'Buddha Trace · Parinirvana',meta:'Mogao cave sanctuary',copy:'The reclining form evokes the Buddha’s parinirvana and is treated with religious respect, not as a generic wellness image.',image:'/images/dunhuang/reclining-buddha.jpg',alt:'Reclining Buddha inside a painted cave',link:'/brand-story/',x:28,y:52},
+{id:'cave-assembly',crowded:true,name:'The Sacred Assembly',kind:'Buddha Trace · Painted sanctuary',meta:'Mogao cave cluster',copy:'Painted and sculpted figures surround the central image, expressing protection, teaching, and devotion.',image:'/images/dunhuang/cave-figures.jpg',alt:'Sacred figures inside a painted cave',link:'/symbols/',x:27,y:50},
+{id:'cliff-buddhas',crowded:true,name:'Buddhas of the Cliff',kind:'Buddha Trace · Rock-cut devotion',meta:'Dunhuang cave landscape',copy:'Figures carved into stone make devotion part of the landscape itself: enduring, weathered, and watched over.',image:'/images/dunhuang/cliff-buddhas.jpg',alt:'Buddha figures carved into a cliff',link:'/symbols/',x:21,y:47},
 {id:'crescent-buddhist-art',name:'Buddhist Art at the Desert Edge',kind:'Buddha Trace · Landscape and devotion',meta:'Mingsha and cave traditions',copy:'The illustrated trail places devotional images beside the desert threshold, where journey and refuge meet.',image:'/images/dunhuang/cave-buddha.jpg',alt:'Buddha within a dark painted cave',link:'/paths/',x:25,y:72},
 {id:'white-horse',name:'White Horse Pagoda',kind:'Buddha Trace · Translation journey',meta:'Near Dunhuang city',copy:'Local tradition connects the pagoda with the white horse of Kumārajīva, recalling how teachings moved through travel and translation.',image:'/images/dunhuang/white-horse-pagoda.webp',alt:'White Horse Pagoda against a blue sky',link:'/places/dunhuang/',x:80,y:64}]},
 myth:{src:'/images/dunhuang/myth-map.png',alt:'Illustrated map of Dunhuang myths and mural stories',points:[
@@ -65,22 +98,157 @@ myth:{src:'/images/dunhuang/myth-map.png',alt:'Illustrated map of Dunhuang myths
 {id:'dragon',name:'Dragon of the Danghe River',kind:'Myth & Murals · River guardian',meta:'Danghe River Park',copy:'The illustrated dragon makes flowing water a guardian presence linking the oasis with renewal.',image:'/images/dunhuang/cave-figures.jpg',alt:'Mythic guardian figures in cave art',link:'/symbols/',x:27,y:66},
 {id:'guardians',name:'Guardians of the Pass',kind:'Myth & Murals · Protection',meta:'Yumen frontier · Image coming soon',copy:'Guardian imagery marks the boundary between known and unknown worlds.',image:'/images/dunhuang/map-placeholder.jpg',alt:'Dunhuang landscape placeholder',link:'/symbols/',x:78,y:54}]}
 };
-const root=document.querySelector('#dunhuang-atlas');
-const markers=root.querySelector('.markers');
-const base=root.querySelector('.map-base-image');
-let layer='travel';
-function select(item){const image=root.querySelector('.detail-image img');image.onerror=()=>{image.onerror=null;image.src='/images/dunhuang/map-placeholder.jpg';image.alt='Dunhuang landscape placeholder'};image.src=item.image;image.alt=item.alt;root.querySelector('.detail-kind').textContent=item.kind;root.querySelector('.detail-title').textContent=item.name;root.querySelector('.detail-meta').textContent=item.meta;root.querySelector('.detail-copy').textContent=item.copy;root.querySelector('.detail-link').href=item.link;markers.querySelectorAll('button').forEach(button=>button.classList.toggle('selected',button.dataset.id===item.id))}
-function draw(){const current=maps[layer];base.src=current.src;base.alt=current.alt;markers.innerHTML='';current.points.forEach((item,index)=>{const button=document.createElement('button');button.type='button';button.className='map-marker';button.dataset.id=item.id;button.style.left=`${item.x}%`;button.style.top=`${item.y}%`;button.setAttribute('aria-label',`Open ${item.name}`);button.innerHTML=`<span>${index+1}</span><strong>${item.name}</strong>`;button.onclick=()=>select(item);markers.appendChild(button)});select(current.points[0])}
-root.querySelectorAll('[data-layer]').forEach(button=>button.onclick=()=>{layer=button.dataset.layer;root.querySelectorAll('[data-layer]').forEach(tab=>{const active=tab===button;tab.classList.toggle('active',active);tab.setAttribute('aria-pressed',String(active))});draw()});
-draw();
+const root = document.querySelector('#dunhuang-atlas');
+const markers = root.querySelector('.markers');
+const base = root.querySelector('.map-base-image');
+const tabs = root.querySelectorAll('[data-layer]');
+const historicalCard = root.querySelector('.historical-atlas');
+const placePicker = root.querySelector('.map-place-picker');
+const placeSelect = placePicker.querySelector('select');
+const detailImage = root.querySelector('.detail-image img');
+let layer;
+
+function selectPoint(item) {
+  detailImage.onerror = () => {
+    detailImage.onerror = null;
+    detailImage.src = '/images/dunhuang/map-placeholder.jpg';
+    detailImage.alt = 'Dunhuang landscape placeholder';
+  };
+  detailImage.src = item.image;
+  detailImage.alt = item.alt;
+  root.querySelector('.detail-kind').textContent = item.kind;
+  root.querySelector('.detail-title').textContent = item.name;
+  root.querySelector('.detail-meta').textContent = item.meta;
+  root.querySelector('.detail-copy').textContent = item.copy;
+  root.querySelector('.detail-link').href = item.link;
+  placeSelect.value = item.id;
+  for (const button of markers.children) {
+    const selected = button.dataset.id === item.id;
+    button.classList.toggle('selected', selected);
+    button.setAttribute('aria-pressed', String(selected));
+  }
+}
+
+function render(nextLayer, placeId) {
+  const current = maps[nextLayer];
+  if (nextLayer !== layer) {
+    layer = nextLayer;
+    base.src = current.src;
+    base.alt = current.alt;
+    historicalCard.hidden = layer !== 'travel';
+    for (const tab of tabs) {
+      const active = tab.dataset.layer === layer;
+      tab.classList.toggle('active', active);
+      tab.setAttribute('aria-pressed', String(active));
+    }
+    markers.replaceChildren();
+    placeSelect.replaceChildren();
+    current.points.forEach((item, index) => {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'map-marker';
+      button.dataset.id = item.id;
+      button.toggleAttribute('data-crowded', Boolean(item.crowded));
+      button.style.left = item.x + '%';
+      button.style.top = item.y + '%';
+      button.setAttribute('aria-label', 'Open ' + item.name);
+      button.setAttribute('aria-controls', 'map-point-details');
+      const number = document.createElement('span');
+      number.textContent = String(index + 1);
+      const name = document.createElement('strong');
+      name.textContent = item.name;
+      button.append(number, name);
+      button.addEventListener('click', () => navigate(layer, item.id));
+      markers.appendChild(button);
+      placeSelect.add(new Option((index + 1) + '. ' + item.name, item.id));
+    });
+    placePicker.hidden = false;
+  }
+  selectPoint(current.points.find(point => point.id === placeId) || current.points[0]);
+}
+
+function restoreFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  const requested = params.get('layer');
+  const validLayer = Object.hasOwn(maps, requested);
+  render(validLayer ? requested : 'travel', validLayer || !requested ? params.get('place') : null);
+}
+
+function navigate(nextLayer, placeId) {
+  if (nextLayer === layer && placeId === markers.querySelector('[aria-pressed="true"]')?.dataset.id) return;
+  const url = new URL(window.location.href);
+  url.searchParams.set('layer', nextLayer);
+  url.searchParams.set('place', placeId);
+  url.hash = 'dunhuang-atlas';
+  window.history.pushState(null, '', url);
+  render(nextLayer, placeId);
+}
+
+for (const tab of tabs) {
+  tab.addEventListener('click', () => {
+    const nextLayer = tab.dataset.layer;
+    if (nextLayer !== layer) navigate(nextLayer, maps[nextLayer].points[0].id);
+  });
+}
+placeSelect.addEventListener('change', () => navigate(layer, placeSelect.value));
+window.addEventListener('popstate', restoreFromUrl);
+restoreFromUrl();
 </script>
 <style>
-  .map-guides { scroll-margin-top: 7rem; }
+  #dunhuang-atlas, .map-guides { scroll-margin-top: 7rem; }
+  .historical-atlas { margin-top: 2rem; padding: 1.75rem 0 0; border-top: 1px solid rgba(238,233,223,.25); }
+  .historical-atlas h2 { font-size: clamp(1.6rem, 3vw, 2.5rem); }
+  .historical-atlas p { max-width: 62ch; }
+  .historical-atlas a { color: var(--sand-light); text-decoration: underline; text-underline-offset: .2em; }
+  .map-place-picker { display: none; }
+  @media (max-width: 600px) {
+    .map-place-picker:not([hidden]) { display: grid; gap: .35rem; padding: 1rem 1.5rem; color: var(--moonlight); font-size: .85rem; }
+    .map-place-picker select { width: 100%; min-height: 44px; font: inherit; padding: .45rem; color: var(--ink-deep); background: var(--moonlight); }
+  }
   .map-guides h3 { margin-top: 2rem; }
 </style>
 <style is:global>
 .map-hero{padding:11rem 0 5rem;background:linear-gradient(90deg,var(--ink-deep),rgba(23,24,19,.45)),url('/images/dunhuang/travel-map.png') center/cover;color:var(--moonlight)}.atlas{padding:3rem 0 8rem;background:var(--ink-deep);color:var(--moonlight)}.trail-tabs{display:grid;grid-template-columns:repeat(3,1fr);border-block:1px solid rgba(238,233,223,.24);margin-bottom:2rem}.trail-tab{display:flex;gap:1rem;padding:1.3rem;background:transparent;color:inherit;border:0;border-right:1px solid rgba(238,233,223,.24);cursor:pointer;text-transform:uppercase;letter-spacing:.1em}.trail-tab:last-child{border:0}.trail-tab span{color:var(--sand-light)}.trail-tab.active{background:var(--sand-light);color:var(--ink-deep)}.map-layout{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(320px,.65fr);background:#20221d}.map-field{position:relative;overflow:hidden;align-self:start;aspect-ratio:16/9;background:var(--ink-deep)}.map-base-image{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}.map-vignette{position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 45px 18px rgba(23,24,19,.32)}.map-hint{position:absolute;left:1rem;bottom:.6rem;padding:.35rem .55rem;background:rgba(23,24,19,.78);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase}.map-marker{position:absolute;z-index:4;transform:translate(-50%,-50%);display:flex;align-items:center;gap:.5rem;padding:0;background:transparent;color:var(--moonlight);border:0;cursor:pointer;text-align:left}.map-marker span{display:grid;place-items:center;width:32px;height:32px;border:2px solid var(--moonlight);border-radius:50%;background:var(--faded-clay);font-size:.68rem;box-shadow:0 2px 10px rgba(23,24,19,.45)}.map-marker strong{max-width:120px;padding:.25rem .4rem;background:rgba(23,24,19,.82);font:500 .7rem var(--sans);opacity:0;transform:translateX(-5px);transition:.2s}.map-marker:hover strong,.map-marker:focus-visible strong,.map-marker.selected strong{opacity:1;transform:none}.map-marker.selected span{background:var(--sand-light);color:var(--ink-deep);box-shadow:0 0 0 7px rgba(238,233,223,.3)}.map-detail{display:flex;flex-direction:column;min-height:100%;padding:2rem;background:#20221d}.detail-image{height:250px;margin:-2rem -2rem 2rem;overflow:hidden}.detail-image img{width:100%;height:100%;object-fit:cover;mask-image:linear-gradient(to bottom,#000 68%,transparent)}.map-detail h2{font-size:clamp(2rem,3vw,3.5rem)}.detail-meta{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--sand-light)}.detail-copy{color:rgba(238,233,223,.75)}.detail-link{margin-top:auto;align-self:flex-start}@media(max-width:1000px){.map-layout{grid-template-columns:1fr}.map-detail{min-height:510px}.trail-tabs{grid-template-columns:1fr}.trail-tab{border-right:0;border-bottom:1px solid rgba(238,233,223,.2)}}@media(max-width:600px){.map-field{aspect-ratio:16/10}.map-marker span{width:27px;height:27px}.map-marker strong{display:none}.map-detail{padding:1.5rem}.detail-image{margin:-1.5rem -1.5rem 2rem}}
 .map-marker strong{opacity:1;transform:none}.map-marker{filter:drop-shadow(0 2px 5px rgba(0,0,0,.65))}@media(max-width:600px){.map-hero{padding:7rem 0 3rem}.atlas{padding:1.5rem 0 4rem}.map-layout{margin-inline:-.25rem}.map-field{aspect-ratio:16/10}.map-marker span{width:32px;height:32px;font-size:.7rem}.map-marker strong{display:none}.map-marker.selected strong{display:block;position:absolute;top:36px;left:50%;width:max-content;max-width:100px;transform:translateX(-50%);font-size:.58rem;text-align:center}.map-detail{min-height:460px}.detail-image{height:220px}.map-hint{font-size:.55rem}}
+/* Lead crowded markers back to their position on the illustration. */
+.map-marker {
+  margin-left: var(--pin-shift-x, 0);
+  margin-top: var(--pin-shift-y, 0);
+}
+.map-marker::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: var(--leader-length, 0);
+  height: 2px;
+  transform: rotate(var(--leader-angle, 0deg));
+  transform-origin: left center;
+  background: var(--moonlight);
+  pointer-events: none;
+  z-index: -1;
+}
+.map-marker[data-id="great-buddha"] { --pin-shift-x: 22px; --leader-length: 22px; --leader-angle: 180deg; }
+.map-marker[data-id="cliff-buddhas"] { --pin-shift-x: -20px; --leader-length: 20px; }
+.map-marker[data-id="cave-assembly"] { --pin-shift-y: -19px; --leader-length: 19px; --leader-angle: 90deg; }
+.map-marker[data-id="reclining"] { --pin-shift-x: 16px; --pin-shift-y: 16px; --leader-length: 23px; --leader-angle: -135deg; }
+.map-marker[data-crowded] { width: 32px; }
+.map-marker[data-crowded] strong {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 50%;
+  width: max-content;
+  max-width: 110px;
+  transform: translateX(-50%);
+  opacity: 0;
+  pointer-events: none;
+}
+.map-marker[data-crowded]:is(:hover, :focus-visible, .selected) strong { opacity: 1; }
+@media (max-width: 600px) {
+  .map-marker strong { pointer-events: none; }
+  .map-marker[data-id="yumen"] { --pin-shift-x: -24px; --leader-length: 24px; }
+  .map-marker[data-id="yang"] { --pin-shift-x: 24px; --leader-length: 24px; --leader-angle: 180deg; }
+}
 </style>
 <style is:global>
   .map-shop-footer{padding:7rem 0;background:var(--sand-pale)}.map-shop-footer h2{max-width:780px;margin-bottom:1rem}.map-shop-footer p:not(.eyebrow){max-width:600px}.map-shop-button{margin-top:1rem;background:var(--faded-clay)!important;border-color:var(--faded-clay)!important;color:#fff!important}.map-shop-button:hover{background:var(--ink-deep)!important;border-color:var(--ink-deep)!important}
